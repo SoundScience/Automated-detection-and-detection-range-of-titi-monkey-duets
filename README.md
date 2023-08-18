@@ -32,3 +32,5 @@ Merchant, N.D., Fristrup, K.M., Johnson, M.P., Tyack, P.L., Witt, M.J., Blondel,
 This work is licensed under a Creative Commons Attribution 4.0 International License. http://creativecommons.org/licenses/by/4.0/
 
 PAMGuide is licensed by the original creator under a Creative Commons Attribution License. https://sourceforge.net/directory/license:ccal/
+
+MonitoR is licensed by the original creators under a General Public Lisence. https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html#SEC1
