@@ -1,0 +1,935 @@
+ObsSampleID,Date,Observer,AvistajeID,data_type,Group,start_time,start_hour,Beh_When_Enc
+OS16259,11/11/2009,Amy Porter,AV19888,Avistaje,UNK,7:50:01,7,Vocalizing
+OS16270,11/22/2009,Amy Porter,AV19901,Avistaje,Callicebus B,9:31:50,9,Vocalizing
+OS16274,11/26/2009,Amy Porter,AV19907,Avistaje,Callicebus K,8:32:51,8,Vocalizing
+OS16274,11/26/2009,Amy Porter,AV19908,Avistaje,UNK,10:11:33,10,Vocalizing
+OS16280,12/2/2009,Amy Porter,AV19914,Avistaje,Callicebus K,14:56:42,14,Vocalizing
+OS16287,12/9/2009,Amy Porter,AV19924,Avistaje,Callicebus L,7:33:53,7,Vocalizing
+OS16343,6/14/2010,Amy Porter,AV20203,Avistaje,Callicebus K,8:00:03,8,Vocalizing
+OS16350,6/20/2010,Amy Porter,AV20218,Avistaje,Callicebus L,10:30:58,10,Vocalizing
+OS16352,6/22/2010,Amy Porter,AV20222,Avistaje,UNK,7:47:32,7,Vocalizing
+OS16352,6/22/2010,Amy Porter,AV20224,Avistaje,UNK,9:59:07,9,Vocalizing
+OS16354,6/24/2010,Amy Porter,AV20230,Avistaje,Callicebus B,7:30:34,7,Vocalizing
+OS16354,6/24/2010,Amy Porter,AV20232,Avistaje,Callicebus B,16:35:20,16,Vocalizing
+OS16355,6/25/2010,Amy Porter,AV20233,Avistaje,Callicebus K,8:06:56,8,Vocalizing
+OS16355,6/25/2010,Amy Porter,AV20234,Avistaje,UNK,8:18:22,8,Vocalizing
+OS16355,6/25/2010,Amy Porter,AV20235,Avistaje,Callicebus B,8:30:10,8,Vocalizing
+OS16355,6/25/2010,Amy Porter,AV20236,Avistaje,Callicebus L,8:33:18,8,Vocalizing
+OS16355,6/25/2010,Amy Porter,AV20237,AdLib,,14:00:01,14,VDU/
+OS16368,7/12/2010,Amy Porter,AV20269,Avistaje,Callicebus K,7:17:57,7,Vocalizing
+OS16369,7/13/2010,Amy Porter,AV20276,Avistaje,UNK,13:23:43,13,Vocalizing
+OS16376,7/20/2010,Amy Porter,AV20293,Avistaje,UNK,10:26:31,10,Vocalizing
+OS16376,7/20/2010,Amy Porter,AV20294,Avistaje,UNK,10:27:29,10,Vocalizing
+OS16378,7/22/2010,Amy Porter,AV20302,Avistaje,UNK,6:00:42,6,Vocalizing
+OS16384,7/28/2010,Amy Porter,AV20311,Avistaje,Callicebus K,5:58:28,5,Vocalizing
+OS16385,7/29/2010,Amy Porter,AV20317,Avistaje,UNK,12:33:53,12,Vocalizing
+OS91001,2/26/2011,Amy Porter,AV20551,AdLib,Lucifer/,8:04:11,8,VDU/MTA/
+OS91003,2/28/2011,Amy Porter,AV20560,Avistaje,UNK,6:53:55,6,Vocalizing
+OS91004,3/1/2011,Amy Porter,AV20565,Avistaje,UNK,6:45:53,6,Vocalizing
+OS91004,3/1/2011,Amy Porter,AV20566,Avistaje,UNK,6:52:59,6,Vocalizing
+OS91005,3/2/2011,Amy Porter,AV20569,Avistaje,UNK,6:13:59,6,Vocalizing
+OS91006,3/3/2011,Amy Porter,AV20571,Avistaje,UNK,6:39:50,6,Vocalizing
+OS91006,3/3/2011,Amy Porter,AV20572,Avistaje,UNK,8:13:36,8,Vocalizing
+OS91009,3/6/2011,Amy Porter,AV20581,AdLib,Bongo/,6:54:21,6,VWH/DU/
+OS91009,3/6/2011,Amy Porter,AV20582,AdLib,Lucifer/,11:33:43,11,VWH/DU/
+OS91009,3/6/2011,Amy Porter,AV20583,Avistaje,UNK,11:42:46,11,Vocalizing
+OS91011,3/8/2011,Amy Porter,AV20587,Avistaje,UNK,12:11:46,12,Vocalizing
+OS91012,3/9/2011,Amy Porter,AV20588,Avistaje,Callicebus K,9:00:45,9,Vocalizing
+OS91013,3/10/2011,Amy Porter,AV20590,Avistaje,UNK,6:16:27,6,Vocalizing
+OS91013,3/10/2011,Amy Porter,AV20591,Avistaje,Callicebus K,6:24:00,6,Vocalizing
+OS91014,3/11/2011,Amy Porter,AV20594,Avistaje,UNK,6:29:12,6,Vocalizing
+OS91016,3/13/2011,Amy Porter,AV20600,Avistaje,UNK,9:05:54,9,Vocalizing
+OS91016,3/13/2011,Amy Porter,AV20601,Avistaje,UNK,9:13:55,9,Vocalizing
+OS91018,3/15/2011,Amy Porter,AV20614,Avistaje,UNK,6:46:07,6,Vocalizing
+OS91018,3/15/2011,Amy Porter,AV20607,Avistaje,Callicebus K,6:55:52,6,Vocalizing
+OS91018,3/15/2011,Amy Porter,AV20608,Avistaje,Callicebus B,7:20:43,7,Vocalizing
+OS91019,3/16/2011,Amy Porter,AV20611,Avistaje,UNK,6:21:36,6,Vocalizing
+OS91020,3/17/2011,Amy Porter,AV20617,Avistaje,UNK,10:45:17,10,Vocalizing
+OS91021,3/18/2011,Amy Porter,AV20620,Avistaje,UNK,9:52:42,9,Vocalizing
+OS91025,3/22/2011,Amy Porter,AV20626,Avistaje,UNK,7:28:53,7,Vocalizing
+OS91025,3/22/2011,Amy Porter,AV20627,Avistaje,UNK,7:52:22,7,Vocalizing
+OS91027,3/24/2011,Amy Porter,AV20632,Avistaje,UNK,7:44:15,7,Vocalizing
+OS91027,3/24/2011,Amy Porter,AV20633,Avistaje,UNK,8:56:20,8,Vocalizing
+OS91027,3/24/2011,Amy Porter,AV20634,Avistaje,UNK,9:48:14,9,Vocalizing
+OS91030,3/27/2011,Amy Porter,AV20648,Avistaje,UNK,12:19:50,12,Vocalizing
+OS91033,3/30/2011,Amy Porter,AV20649,Avistaje,UNK,7:27:07,7,Vocalizing
+OS91034,3/31/2011,Amy Porter,AV20656,Avistaje,UNK,7:06:00,7,Vocalizing
+OS91035,4/1/2011,Amy Porter,AV20665,Avistaje,UNK,8:22:08,8,Vocalizing
+OS91035,4/1/2011,Amy Porter,AV20666,Avistaje,UNK,9:37:48,9,Vocalizing
+OS91038,4/4/2011,Amy Porter,AV20672,Avistaje,Callicebus K,8:03:26,8,Vocalizing
+OS91039,4/5/2011,Amy Porter,AV20678,Avistaje,UNK,9:11:41,9,Vocalizing
+OS91039,4/5/2011,Amy Porter,AV20679,Avistaje,Callicebus D,9:57:20,9,Vocalizing
+OS91041,4/7/2011,Amy Porter,AV20684,Avistaje,Callicebus L,14:54:00,14,Vocalizing
+OS91041,4/7/2011,Amy Porter,AV20684,AdLib,Lucifer/,15:50:00,15,OU/WH/OU/DU/WH/DU/CHI/
+OS91042,4/8/2011,Amy Porter,AV20685,Avistaje,Callicebus L,6:40:54,6,Vocalizing
+OS91042,4/8/2011,Amy Porter,AV20685,AdLib,Lucifer/,9:49:00,9,OU/CHI/DU/WH/DU/
+OS91042,4/8/2011,Amy Porter,AV20688,Avistaje,Callicebus D,9:58:54,9,Vocalizing
+OS91042,4/8/2011,Amy Porter,AV20689,Avistaje,UNK,11:28:20,11,Vocalizing
+OS91042,4/8/2011,Amy Porter,AV20686,AdLib,Lucifer/,15:29:56,15,OU/DU/WH/OU/OU/DU/LVA/OU/FOA/APA/AR/TL/LVR/FOA/CHI/OU/TC/
+OS91042,4/8/2011,Amy Porter,AV20690,Avistaje,Callicebus B,15:30:57,15,Vocalizing
+OS91042,4/8/2011,Amy Porter,AV20691,Avistaje,Callicebus D,15:37:47,15,Vocalizing
+OS91045,4/11/2011,Amy Porter,AV20692,Avistaje,Callicebus K,6:00:37,6,Vocalizing
+OS91045,4/11/2011,Amy Porter,AV20694,Avistaje,UNK,6:31:32,6,Vocalizing
+OS91045,4/11/2011,Amy Porter,AV20695,Avistaje,UNK,6:54:36,6,Vocalizing
+OS91045,4/11/2011,Amy Porter,AV20696,Avistaje,UNK,7:51:26,7,Vocalizing
+OS91045,4/11/2011,Amy Porter,AV20697,Avistaje,UNK,9:28:40,9,Vocalizing
+OS91045,4/11/2011,Amy Porter,AV20698,Avistaje,Callicebus L,10:49:38,10,Vocalizing
+OS91046,4/12/2011,Amy Porter,AV20699,Avistaje,UNK,6:16:08,6,Vocalizing
+OS91048,4/14/2011,Amy Porter,AV20707,Avistaje,Callicebus L,15:39:25,15,Vocalizing
+OS91052,4/18/2011,Amy Porter,AV20712,Avistaje,Callicebus K,6:06:00,6,Vocalizing
+OS91052,4/18/2011,Amy Porter,AV20717,Avistaje,UNK,8:03:03,8,Vocalizing
+OS91052,4/18/2011,Amy Porter,AV20719,Avistaje,Callicebus G,8:30:03,8,Vocalizing
+OS91055,4/21/2011,Amy Porter,AV20725,AdLib,Kong/,6:15:11,6,VDU/
+OS91055,4/21/2011,Amy Porter,AV20726,Avistaje,Callicebus B,6:48:43,6,Vocalizing
+OS91058,4/24/2011,Amy Porter,AV20727,Avistaje,UNK,6:29:34,6,Vocalizing
+OS91058,4/24/2011,Amy Porter,AV20728,Avistaje,Callicebus L,6:58:33,6,Vocalizing
+OS91058,4/24/2011,Amy Porter,AV20729,Avistaje,UNK,7:07:18,7,Vocalizing
+OS91058,4/24/2011,Amy Porter,AV20731,Avistaje,UNK,7:37:40,7,Vocalizing
+OS91059,4/25/2011,Amy Porter,AV20732,Avistaje,UNK,12:22:39,12,Vocalizing
+OS91060,4/26/2011,Amy Porter,AV20734,Avistaje,UNK,6:50:10,6,Vocalizing
+OS91060,4/26/2011,Amy Porter,AV20735,Avistaje,UNK,7:11:03,7,Vocalizing
+OS91069,5/18/2011,Amy Porter,AV20753,Avistaje,UNK,14:35:29,14,Vocalizing
+OS91069,5/18/2011,Amy Porter,AV20755,Avistaje,UNK,14:38:48,14,Vocalizing
+OS91071,5/20/2011,Amy Porter,AV20757,Avistaje,UNK,7:36:40,7,Vocalizing
+OS91072,5/21/2011,Amy Porter,AV20761,Avistaje,Callicebus B,5:26:03,5,Vocalizing
+OS91072,5/21/2011,Amy Porter,AV20763,Avistaje,Callicebus B,6:07:25,6,Vocalizing
+OS91072,5/21/2011,Amy Porter,AV20764,Avistaje,Callicebus L,6:12:09,6,Vocalizing
+OS91072,5/21/2011,Amy Porter,AV20765,Avistaje,UNK,6:18:30,6,Vocalizing
+OS91072,5/21/2011,Amy Porter,AV20766,Avistaje,Callicebus K,6:55:26,6,Vocalizing
+OS91074,5/23/2011,Amy Porter,AV20770,Avistaje,Callicebus K,6:48:20,6,Vocalizing
+OS91074,5/23/2011,Amy Porter,AV20771,Avistaje,UNK,6:57:35,6,Vocalizing
+OS91074,5/23/2011,Amy Porter,AV20773,Avistaje,UNK,8:21:55,8,Vocalizing
+OS91075,5/24/2011,Amy Porter,AV20774,Avistaje,UNK,8:44:36,8,Vocalizing
+OS91075,5/24/2011,Amy Porter,AV20775,Avistaje,UNK,8:58:18,8,Vocalizing
+OS91076,5/25/2011,Amy Porter,AV20777,Avistaje,UNK,6:45:33,6,Vocalizing
+OS91077,5/26/2011,Amy Porter,AV20779,Avistaje,Callicebus K,5:39:33,5,Vocalizing
+OS91078,5/27/2011,Amy Porter,AV20784,Avistaje,UNK,5:32:38,5,Vocalizing
+OS91078,5/27/2011,Amy Porter,AV20786,Avistaje,Callicebus B,7:05:05,7,Vocalizing
+OS91078,5/27/2011,Amy Porter,AV20787,Avistaje,Callicebus K,11:47:16,11,Vocalizing
+OS91078,5/27/2011,Amy Porter,AV20788,Avistaje,Callicebus B,11:49:43,11,Vocalizing
+OS91078,5/27/2011,Amy Porter,AV20789,Avistaje,Callicebus K,12:51:16,12,Vocalizing
+OS91078,5/27/2011,Amy Porter,AV20790,Avistaje,Callicebus K,13:19:28,13,Vocalizing
+OS91078,5/27/2011,Amy Porter,AV20791,Avistaje,Callicebus L,14:19:41,14,Vocalizing
+OS91081,5/30/2011,Amy Porter,AV20797,Avistaje,Callicebus B,7:20:51,7,Vocalizing
+OS91082,5/31/2011,Amy Porter,AV20802,Avistaje,Callicebus K,9:15:49,9,Vocalizing
+OS91082,5/31/2011,Amy Porter,AV20802,AdLib,Kong/,10:39:00,10,VDU/
+OS91082,5/31/2011,Amy Porter,AV20803,Avistaje,UNK,10:39:31,10,Vocalizing
+OS91083,6/1/2011,Amy Porter,AV20804,Avistaje,UNK,5:44:22,5,Vocalizing
+OS91083,6/1/2011,Amy Porter,AV20805,Avistaje,Callicebus B,6:55:06,6,Vocalizing
+OS91083,6/1/2011,Amy Porter,AV20806,Avistaje,Callicebus K,7:00:48,7,Vocalizing
+OS91084,6/2/2011,Amy Porter,AV20810,Avistaje,Callicebus K,6:27:15,6,Vocalizing
+OS91084,6/2/2011,Amy Porter,AV20811,Avistaje,Callicebus B,6:32:27,6,Vocalizing
+OS91084,6/2/2011,Amy Porter,AV20812,Avistaje,UNK,6:46:26,6,Vocalizing
+OS91084,6/2/2011,Amy Porter,AV20813,Avistaje,UNK,6:47:43,6,Vocalizing
+OS91084,6/2/2011,Amy Porter,AV20815,Avistaje,UNK,10:22:37,10,Vocalizing
+OS91087,6/5/2011,Amy Porter,AV20827,Avistaje,UNK,15:37:00,15,Vocalizing
+OS91088,6/6/2011,Amy Porter,AV20828,Avistaje,Callicebus K,7:31:15,7,Vocalizing
+OS91088,6/6/2011,Amy Porter,AV20829,Avistaje,UNK,7:34:33,7,Vocalizing
+OS91088,6/6/2011,Amy Porter,AV20833,Avistaje,UNK,13:20:52,13,Vocalizing
+OS91088,6/6/2011,Amy Porter,AV20834,Avistaje,UNK,14:02:42,14,Vocalizing
+OS91091,6/9/2011,Amy Porter,AV20839,Avistaje,UNK,7:40:20,7,Vocalizing
+OS91092,6/10/2011,Amy Porter,AV20841,Avistaje,UNK,6:10:23,6,Vocalizing
+OS91092,6/10/2011,Amy Porter,AV20842,Avistaje,UNK,6:50:48,6,Vocalizing
+OS91094,6/12/2011,Amy Porter,AV20853,Avistaje,UNK,16:11:59,16,Vocalizing
+OS91096,6/14/2011,Amy Porter,AV20856,Avistaje,UNK,10:58:00,10,Vocalizing
+OS91096,6/14/2011,Amy Porter,AV20857,Avistaje,UNK,16:22:49,16,Vocalizing
+OS91097,6/15/2011,Amy Porter,AV20860,Avistaje,UNK,9:29:41,9,Vocalizing
+OS91097,6/15/2011,Amy Porter,AV20862,Avistaje,UNK,10:39:40,10,Vocalizing
+OS91097,6/15/2011,Amy Porter,AV20863,Avistaje,UNK,13:30:02,13,Vocalizing
+OS91097,6/15/2011,Amy Porter,AV20859,AdLib,Luciferus/,13:33:00,13,OU/CHI/WH/DU/WH/
+OS91097,6/15/2011,Amy Porter,AV20864,Avistaje,UNK,13:38:00,13,Vocalizing
+OS91102,6/20/2011,Amy Porter,AV20876,Avistaje,UNK,6:23:35,6,Vocalizing
+OS91102,6/20/2011,Amy Porter,AV20877,Avistaje,Callicebus K,6:26:46,6,Vocalizing
+OS91102,6/20/2011,Amy Porter,AV20878,Avistaje,Callicebus K,8:08:35,8,Vocalizing
+OS91102,6/20/2011,Amy Porter,AV20880,Avistaje,UNK,13:58:41,13,Vocalizing
+OS91106,6/24/2011,Amy Porter,AV20888,Avistaje,UNK,11:14:55,11,Vocalizing
+OS91110,6/28/2011,Amy Porter,AV20891,Avistaje,UNK,5:27:26,5,Vocalizing
+OS91110,6/28/2011,Amy Porter,AV20893,Avistaje,UNK,7:05:12,7,Vocalizing
+OS91111,6/29/2011,Amy Porter,AV20896,Avistaje,UNK,10:13:04,10,Vocalizing
+OS91111,6/29/2011,Amy Porter,AV20898,Avistaje,UNK,10:23:24,10,Vocalizing
+OS91120,7/8/2011,Amy Porter,AV20918,Avistaje,UNK,9:55:24,9,Vocalizing
+OS91128,7/16/2011,Amy Porter,AV20925,Avistaje,Callicebus K,6:30:36,6,Vocalizing
+OS91137,7/25/2011,Amy Porter,AV20937,Avistaje,UNK,11:34:20,11,Vocalizing
+OS91137,7/25/2011,Amy Porter,AV20938,Avistaje,Callicebus L,11:36:49,11,Vocalizing
+OS91138,7/26/2011,Amy Porter,AV20946,Avistaje,UNK,14:59:00,14,Vocalizing
+OS91145,9/7/2011,Amy Porter,AV20957,Avistaje,UNK,7:25:13,7,Vocalizing
+OS91146,9/8/2011,Amy Porter,AV20964,Avistaje,Callicebus K,6:36:36,6,Vocalizing
+OS91151,9/13/2011,Amy Porter,AV20975,Avistaje,UNK,6:59:35,6,Vocalizing
+OS91155,9/17/2011,Amy Porter,AV20982,Avistaje,Callicebus K,5:35:56,5,Vocalizing
+OS91155,9/17/2011,Amy Porter,AV20984,Avistaje,UNK,8:39:16,8,Vocalizing
+OS91155,9/17/2011,Amy Porter,AV20985,Avistaje,UNK,8:47:21,8,Vocalizing
+OS91155,9/17/2011,Amy Porter,AV20986,Avistaje,UNK,13:10:48,13,Vocalizing
+OS91158,9/20/2011,Amy Porter,AV20990,Avistaje,Callicebus K,6:58:40,6,Vocalizing
+OS91159,9/21/2011,Amy Porter,AV20998,Avistaje,Callicebus L,12:05:11,12,Vocalizing
+OS91164,9/26/2011,Amy Porter,AV21002,Avistaje,Callicebus K,6:13:46,6,Vocalizing
+OS91165,9/27/2011,Amy Porter,AV21005,Avistaje,UNK,7:04:59,7,Vocalizing
+OS91165,9/27/2011,Amy Porter,AV21006,Avistaje,Callicebus L,7:05:51,7,Vocalizing
+OS91165,9/27/2011,Amy Porter,AV21007,Avistaje,UNK,7:10:00,7,Vocalizing
+OS91165,9/27/2011,Amy Porter,AV21008,Avistaje,UNK,7:19:59,7,Vocalizing
+OS91165,9/27/2011,Amy Porter,AV21006,Focal,Luciferus/,7:55:50,7,VDU/STL/
+OS91170,10/2/2011,Amy Porter,AV21016,Avistaje,Callicebus K,6:21:16,6,Vocalizing
+OS91172,10/4/2011,Amy Porter,AV21025,Avistaje,UNK,12:41:22,12,Vocalizing
+OS91176,10/8/2011,Amy Porter,AV21030,Avistaje,UNK,7:02:18,7,Vocalizing
+OS91177,10/9/2011,Amy Porter,AV21033,Avistaje,Callicebus K,6:36:00,6,Vocalizing
+OS91177,10/9/2011,Amy Porter,AV21034,Avistaje,UNK,7:01:00,7,Vocalizing
+OS91177,10/9/2011,Amy Porter,AV21035,Avistaje,Callicebus B,7:49:00,7,Vocalizing
+OS91179,10/11/2011,Amy Porter,AV21038,Avistaje,UNK,6:51:13,6,Vocalizing
+OS91179,10/11/2011,Amy Porter,AV21039,Avistaje,UNK,6:54:03,6,Vocalizing
+OS91181,10/13/2011,Amy Porter,AV21045,Avistaje,Callicebus K,5:42:30,5,Vocalizing
+OS91181,10/13/2011,Amy Porter,AV21046,Avistaje,UNK,6:46:00,6,Vocalizing
+OS91181,10/13/2011,Amy Porter,AV21047,Avistaje,UNK,6:53:00,6,Vocalizing
+OS91183,10/15/2011,Amy Porter,AV21050,Avistaje,Callicebus K,6:27:34,6,Vocalizing
+OS91183,10/15/2011,Amy Porter,AV21051,Avistaje,UNK,6:35:17,6,Vocalizing
+OS91183,10/15/2011,Amy Porter,AV21052,Avistaje,UNK,6:43:59,6,Vocalizing
+OS91187,10/19/2011,Amy Porter,AV21056,Avistaje,Callicebus B,11:18:59,11,Vocalizing
+OS91190,10/22/2011,Amy Porter,AV21059,Avistaje,UNK,6:48:29,6,Vocalizing
+OS91190,10/22/2011,Amy Porter,AV21060,Avistaje,UNK,7:11:44,7,Vocalizing
+OS91190,10/22/2011,Amy Porter,AV21061,Avistaje,UNK,7:20:08,7,Vocalizing
+OS91194,10/26/2011,Amy Porter,AV21069,Avistaje,UNK,6:53:05,6,Vocalizing
+OS91194,10/26/2011,Amy Porter,AV21073,Avistaje,Callicebus K,15:00:33,15,Vocalizing
+OS91197,10/29/2011,Amy Porter,AV21078,Avistaje,UNK,6:12:47,6,Vocalizing
+OS91198,10/30/2011,Amy Porter,AV21080,Avistaje,Callicebus K,5:21:27,5,Vocalizing
+OS91198,10/30/2011,Amy Porter,AV21081,Avistaje,Callicebus H,6:00:56,6,Vocalizing
+OS91198,10/30/2011,Amy Porter,AV21082,Avistaje,Callicebus K,6:04:00,6,Vocalizing
+OS91199,10/31/2011,Amy Porter,AV21086,Avistaje,Callicebus K,6:42:56,6,Vocalizing
+OS91208,11/9/2011,Amy Porter,AV21092,Avistaje,UNK,6:09:14,6,Vocalizing
+OS91208,11/9/2011,Amy Porter,AV21093,Avistaje,UNK,6:11:36,6,Vocalizing
+OS91208,11/9/2011,Amy Porter,AV21095,Avistaje,Callicebus B,6:32:12,6,Vocalizing
+OS91214,11/15/2011,Amy Porter,AV21106,Avistaje,UNK,6:25:36,6,Vocalizing
+OS91218,11/19/2011,Amy Porter,AV21109,Avistaje,Callicebus L,6:24:56,6,Vocalizing
+OS91218,11/19/2011,Amy Porter,AV21110,Avistaje,UNK,6:27:05,6,Vocalizing
+OS91218,11/19/2011,Amy Porter,AV21111,Avistaje,UNK,6:30:39,6,Vocalizing
+OS91218,11/19/2011,Amy Porter,AV21112,Avistaje,Callicebus B,6:53:58,6,Vocalizing
+OS91220,11/21/2011,Amy Porter,AV21119,Avistaje,Callicebus K,6:55:40,6,Vocalizing
+OS91220,11/21/2011,Amy Porter,AV21120,Avistaje,Callicebus L,14:11:43,14,Vocalizing
+OS91224,11/25/2011,Amy Porter,AV21123,Avistaje,Callicebus L,5:55:16,5,Vocalizing
+OS91224,11/25/2011,Amy Porter,AV21124,Avistaje,UNK,6:58:52,6,Vocalizing
+OS91224,11/25/2011,Amy Porter,AV21125,Avistaje,UNK,7:30:26,7,Vocalizing
+OS91225,11/26/2011,Amy Porter,AV21126,Avistaje,UNK,5:43:00,5,Vocalizing
+OS91225,11/26/2011,Amy Porter,AV21127,AdLib,LF/,5:43:00,5,OU/DU/CHI/BG/TL/
+OS91225,11/26/2011,Amy Porter,AV21128,Avistaje,UNK,15:47:00,15,Vocalizing
+OS91226,11/27/2011,Amy Porter,AV21129,Avistaje,UNK,5:13:00,5,Vocalizing
+OS91226,11/27/2011,Amy Porter,AV21132,AdLib,LF/,5:13:00,5,DU/
+OS91226,11/27/2011,Amy Porter,AV21130,Avistaje,UNK,5:41:00,5,Vocalizing
+OS91226,11/27/2011,Amy Porter,AV21131,Avistaje,UNK,5:47:00,5,Vocalizing
+OS91226,11/27/2011,Amy Porter,AV21133,Avistaje,UNK,6:46:00,6,Vocalizing
+OS91226,11/27/2011,Amy Porter,AV21134,Avistaje,UNK,6:49:00,6,Vocalizing
+OS91226,11/27/2011,Amy Porter,AV21132,Focal,Luciferus/,7:09:00,7,VDU/STL/
+OS91226,11/27/2011,Amy Porter,AV21140,Avistaje,UNK,8:01:00,8,Vocalizing
+OS91226,11/27/2011,Amy Porter,AV21135,Avistaje,UNK,10:29:00,10,Vocalizing
+OS91228,11/29/2011,Amy Porter,AV21138,AdLib,Luciferus/,6:40:00,6,DU/
+OS91228,11/29/2011,Amy Porter,AV21139,Avistaje,UNK,10:50:03,10,Vocalizing
+OS91232,12/3/2011,Amy Porter,AV21142,Avistaje,Callicebus K,6:34:24,6,Vocalizing
+OS91232,12/3/2011,Amy Porter,AV21144,Avistaje,UNK,6:47:38,6,Vocalizing
+OS91234,12/5/2011,Amy Porter,AV21153,Avistaje,UNK,14:32:16,14,Vocalizing
+OS91237,12/8/2011,Amy Porter,AV21157,Avistaje,UNK,6:28:54,6,Vocalizing
+OS91237,12/8/2011,Amy Porter,AV21158,Avistaje,UNK,6:30:46,6,Vocalizing
+OS91237,12/8/2011,Amy Porter,AV21159,Avistaje,UNK,6:34:41,6,Vocalizing
+OS91237,12/8/2011,Amy Porter,AV21161,Avistaje,UNK,6:40:09,6,Vocalizing
+OS91238,12/9/2011,Amy Porter,AV21166,Avistaje,UNK,13:06:40,13,Vocalizing
+OS91238,12/9/2011,Amy Porter,AV21167,Avistaje,UNK,13:09:55,13,Vocalizing
+OS91240,12/11/2011,Amy Porter,AV21170,Avistaje,UNK,6:18:36,6,Vocalizing
+OS91241,12/12/2011,Amy Porter,AV21174,Avistaje,UNK,9:00:50,9,Vocalizing
+OS91241,12/12/2011,Amy Porter,AV21176,Avistaje,UNK,9:08:51,9,Vocalizing
+OS91241,12/12/2011,Amy Porter,AV21177,Avistaje,UNK,9:12:43,9,Vocalizing
+OS91241,12/12/2011,Amy Porter,AV21178,Avistaje,UNK,15:00:18,15,Vocalizing
+OS91245,12/16/2011,Amy Porter,AV21180,Avistaje,UNK,6:06:59,6,Vocalizing
+OS91250,12/21/2011,Amy Porter,AV21191,Avistaje,UNK,7:00:05,7,Vocalizing
+OS91255,12/26/2011,Amy Porter,AV21202,Avistaje,UNK,6:33:14,6,Vocalizing
+OS91255,12/26/2011,Amy Porter,AV21203,Avistaje,Callicebus K,7:13:49,7,Vocalizing
+OS91255,12/26/2011,Amy Porter,AV21206,Avistaje,Callicebus L,8:39:35,8,Vocalizing
+OS91256,12/27/2011,Amy Porter,AV21205,Avistaje,Callicebus B,6:57:11,6,Vocalizing
+OS91260,12/31/2011,Amy Porter,AV21210,Avistaje,Callicebus L,11:30:51,11,Vocalizing
+OS91263,1/3/2012,Amy Porter,AV21214,Avistaje,Callicebus K,6:50:32,6,Vocalizing
+OS91263,1/3/2012,Amy Porter,AV21215,Avistaje,UNK,6:55:52,6,Vocalizing
+OS91265,1/5/2012,Amy Porter,AV21218,Avistaje,Callicebus B,6:11:11,6,Vocalizing
+OS91266,1/6/2012,Amy Porter,AV21223,Avistaje,UNK,7:09:19,7,Vocalizing
+OS91266,1/6/2012,Amy Porter,AV21224,Avistaje,UNK,7:38:27,7,Vocalizing
+OS91266,1/6/2012,Amy Porter,AV21225,Avistaje,UNK,9:10:59,9,Vocalizing
+OS91266,1/6/2012,Amy Porter,AV21226,Avistaje,UNK,9:22:10,9,Vocalizing
+OS91266,1/6/2012,Amy Porter,AV21221,AdLib,Kia/,9:40:17,9,DU/
+OS91266,1/6/2012,Amy Porter,AV21227,Avistaje,UNK,9:40:42,9,Vocalizing
+OS91266,1/6/2012,Amy Porter,AV21228,Avistaje,UNK,10:22:26,10,Vocalizing
+OS91267,1/7/2012,Amy Porter,AV21230,Avistaje,UNK,14:32:41,14,Vocalizing
+OS91276,1/16/2012,Amy Porter,AV21236,Focal,Bongo/,6:59:07,6,VDU/
+OS91276,1/16/2012,Amy Porter,AV21237,Avistaje,UNK,8:48:24,8,Vocalizing
+OS91277,1/17/2012,Amy Porter,AV21238,Avistaje,UNK,7:02:40,7,Vocalizing
+OS91277,1/17/2012,Amy Porter,AV21240,Avistaje,UNK,9:14:23,9,Vocalizing
+OS91278,1/18/2012,Amy Porter,AV21241,Avistaje,Callicebus K,6:17:13,6,Vocalizing
+OS91278,1/18/2012,Amy Porter,AV21241,Focal,Kong/,6:29:17,6,VDU/STT/
+OS91278,1/18/2012,Amy Porter,AV21241,Focal,Katta/,6:49:40,6,VDU/STT/
+OS91285,1/25/2012,Amy Porter,AV21249,AdLib,Bongo/,7:31:16,7,OU/DU/WH/CHI/OU/CC/
+OS91285,1/25/2012,Amy Porter,AV21255,Avistaje,Callicebus K,7:35:46,7,Vocalizing
+OS91291,1/31/2012,Amy Porter,AV21260,Avistaje,Callicebus K,8:39:26,8,Vocalizing
+OS91293,2/2/2012,Amy Porter,AV21258,Avistaje,Callicebus B,7:00:51,7,Vocalizing
+OS91293,2/2/2012,Amy Porter,AV21261,Avistaje,UNK,7:28:13,7,Vocalizing
+OS91293,2/2/2012,Amy Porter,AV21257,Focal,Katta/,9:12:53,9,VDU/
+OS91295,2/4/2012,Amy Porter,AV21262,Avistaje,Callicebus K,6:59:13,6,Vocalizing
+OS91304,2/13/2012,Amy Porter,AV21274,Avistaje,Callicebus L,8:26:08,8,Vocalizing
+OS91305,2/14/2012,Amy Porter,AV21276,Avistaje,Callicebus K,6:21:53,6,Vocalizing
+OS91305,2/14/2012,Amy Porter,AV21277,Avistaje,UNK,6:23:09,6,Vocalizing
+OS91305,2/14/2012,Amy Porter,AV21279,Avistaje,UNK,7:00:23,7,Vocalizing
+OS91305,2/14/2012,Amy Porter,AV21282,Avistaje,Callicebus L,7:14:17,7,Vocalizing
+OS91305,2/14/2012,Amy Porter,AV21278,AdLib,,7:35:56,7,WH/OU/DU/
+OS91305,2/14/2012,Amy Porter,AV21278,Focal,Bongo/,7:43:37,7,VDU/
+OS91305,2/14/2012,Amy Porter,AV21283,Avistaje,UNK,7:48:25,7,Vocalizing
+OS91305,2/14/2012,Amy Porter,AV21284,Avistaje,UNK,8:10:48,8,Vocalizing
+OS91308,2/17/2012,Amy Porter,AV21285,Avistaje,Callicebus K,6:16:59,6,Vocalizing
+OS91314,2/27/2012,Amy Porter,AV21291,AdLib,Luciferus/,6:45:59,6,OU/WH/DU/BG/
+OS91314,2/27/2012,Amy Porter,AV21291,Focal,Luciferus/,6:56:22,6,VDU/
+OS91314,2/27/2012,Amy Porter,AV21296,Avistaje,Callicebus B,7:00:56,7,Vocalizing
+OS91314,2/27/2012,Amy Porter,AV21291,Focal,Lulu/,7:20:47,7,VDU/
+OS91314,2/27/2012,Amy Porter,AV21292,Avistaje,UNK,14:10:30,14,Vocalizing
+OS91321,3/5/2012,Amy Porter,AV21300,Avistaje,Callicebus L,7:35:22,7,Vocalizing
+OS91321,3/5/2012,Amy Porter,AV21303,Avistaje,Callicebus L,9:35:40,9,Vocalizing
+OS91321,3/5/2012,Amy Porter,AV21304,Avistaje,Callicebus L,13:41:40,13,Vocalizing
+OS91321,3/5/2012,Amy Porter,AV21307,Avistaje,Callicebus L,16:09:06,16,Vocalizing
+OS91322,3/6/2012,Amy Porter,AV21301,Avistaje,Callicebus L,10:48:49,10,Vocalizing
+OS91324,3/8/2012,Amy Porter,AV21305,Avistaje,Callicebus K,9:57:03,9,Vocalizing
+OS91329,3/13/2012,Amy Porter,AV21314,Avistaje,UNK,7:47:54,7,Vocalizing
+OS91329,3/13/2012,Amy Porter,AV21313,AdLib,Kong/,8:39:40,8,CHI/WH/DU/
+OS91329,3/13/2012,Amy Porter,AV21315,Avistaje,UNK,8:41:31,8,Vocalizing
+OS91329,3/13/2012,Amy Porter,AV21313,Focal,Kong/,8:53:49,8,VDU/
+OS91334,3/18/2012,Amy Porter,AV21319,Avistaje,UNK,6:58:44,6,Vocalizing
+OS91336,3/20/2012,Amy Porter,AV21321,AdLib,Kia/,6:54:39,6,CHI/WH/DU/
+OS91339,3/23/2012,Amy Porter,AV21326,Avistaje,Callicebus L,6:43:50,6,Vocalizing
+OS91339,3/23/2012,Amy Porter,AV21326,Focal,Luciferus/,7:09:53,7,VDU/STL/
+OS91339,3/23/2012,Amy Porter,AV21327,Avistaje,Callicebus B,10:47:57,10,Vocalizing
+OS91344,3/28/2012,Amy Porter,AV21338,Avistaje,UNK,11:15:38,11,Vocalizing
+OS91345,3/29/2012,Amy Porter,AV21337,Avistaje,UNK,8:42:42,8,Vocalizing
+OS91348,4/1/2012,Amy Porter,AV21341,Avistaje,UNK,7:55:30,7,Vocalizing
+OS91348,4/1/2012,Amy Porter,AV21340,AdLib,Kong/,7:56:29,7,DU/WH/
+OS91348,4/1/2012,Amy Porter,AV21342,Avistaje,Callicebus B,17:01:22,17,Vocalizing
+OS91352,4/5/2012,Amy Porter,AV21350,Avistaje,Callicebus L,9:45:24,9,Vocalizing
+OS91354,4/7/2012,Amy Porter,AV21354,Avistaje,Callicebus B,9:33:17,9,Vocalizing
+OS91354,4/7/2012,Amy Porter,AV21353,Avistaje,Callicebus L,9:33:48,9,Vocalizing
+OS91354,4/7/2012,Amy Porter,AV21355,Avistaje,Callicebus K,9:44:23,9,Vocalizing
+OS91354,4/7/2012,Amy Porter,AV21356,Avistaje,UNK,9:46:21,9,Vocalizing
+OS91359,4/12/2012,Amy Porter,AV21358,Avistaje,UNK,7:33:57,7,Vocalizing
+OS91360,4/13/2012,Amy Porter,AV21363,Avistaje,UNK,11:38:43,11,Vocalizing
+OS91374,5/3/2012,Amy Porter,AV21372,AdLib,Kong/,5:46:57,5,VDU/
+OS91374,5/3/2012,Amy Porter,AV21375,Avistaje,UNK,14:26:52,14,Vocalizing
+OS91375,5/4/2012,Amy Porter,AV21376,Avistaje,UNK,5:57:00,5,Vocalizing
+OS91375,5/4/2012,Amy Porter,AV21373,Avistaje,Callicebus L,6:27:47,6,Vocalizing
+OS91383,5/12/2012,Amy Porter,AV21385,Avistaje,UNK,5:40:45,5,Vocalizing
+OS91383,5/12/2012,Amy Porter,AV21386,Avistaje,UNK,5:46:12,5,Vocalizing
+OS91383,5/12/2012,Amy Porter,AV21387,Avistaje,Callicebus L,5:50:23,5,Vocalizing
+OS91383,5/12/2012,Amy Porter,AV21389,Avistaje,UNK,14:26:11,14,Vocalizing
+OS91387,5/16/2012,Amy Porter,AV21391,Avistaje,UNK,9:58:42,9,Vocalizing
+OS91396,5/26/2012,Amy Porter,AV21400,AdLib,Kong/,8:33:24,8,DU/
+OS91397,5/27/2012,Amy Porter,AV21402,Focal,Kong/,6:09:38,6,VDU/
+OS91398,5/28/2012,Amy Porter,AV21403,Avistaje,Callicebus B,7:34:37,7,Vocalizing
+OS91405,6/3/2012,Amy Porter,AV21409,AdLib,Bandito/,7:01:19,7,VCHI/VWH/VBG/VDU/
+OS91405,6/3/2012,Amy Porter,AV21415,Avistaje,Callicebus K,7:05:11,7,Vocalizing
+OS91421,6/19/2012,Amy Porter,AV21432,Avistaje,UNK,10:55:22,10,Vocalizing
+OS91423,6/21/2012,Amy Porter,AV21436,Avistaje,Callicebus B,6:48:44,6,Vocalizing
+OS91425,6/23/2012,Amy Porter,AV21440,Avistaje,Callicebus L,7:34:07,7,Vocalizing
+OS91425,6/23/2012,Amy Porter,AV21441,Avistaje,UNK,10:26:40,10,Vocalizing
+OS91429,6/27/2012,Amy Porter,AV21444,Avistaje,Callicebus G,5:43:27,5,Vocalizing
+OS91429,6/27/2012,Amy Porter,AV21445,Avistaje,Callicebus K,5:49:01,5,Vocalizing
+OS91437,7/5/2012,Amy Porter,AV21453,Avistaje,UNK,9:53:40,9,Vocalizing
+OS91447,7/15/2012,Amy Porter,AV21467,Avistaje,Callicebus L,5:37:48,5,Vocalizing
+OS91447,7/15/2012,Amy Porter,AV21468,Avistaje,Callicebus B,5:41:47,5,Vocalizing
+OS91447,7/15/2012,Amy Porter,AV21466,AdLib,Kong/,5:53:00,5,VDU/
+OS91451,7/19/2012,Amy Porter,AV21477,Avistaje,UNK,12:27:47,12,Vocalizing
+OS91452,7/20/2012,Amy Porter,AV21472,Avistaje,Callicebus B,6:37:50,6,Vocalizing
+OS91453,7/21/2012,Amy Porter,AV21474,Avistaje,Callicebus K,7:05:00,7,Vocalizing
+OS91458,7/26/2012,Amy Porter,AV21484,Avistaje,Callicebus L,15:23:28,15,Vocalizing
+OS91464,8/1/2012,Amy Porter,AV21488,Avistaje,Callicebus B,5:50:30,5,Vocalizing
+OS91464,8/1/2012,Amy Porter,AV21489,Avistaje,UNK,5:52:03,5,Vocalizing
+OS91465,8/2/2012,Amy Porter,AV21492,Avistaje,UNK,6:09:46,6,Vocalizing
+OS91465,8/2/2012,Amy Porter,AV21493,Avistaje,Callicebus K,8:13:30,8,Vocalizing
+OS91468,8/5/2012,Amy Porter,AV21496,AdLib,Kong/,14:04:02,14,WP/WP/WP/DU/
+OS91475,8/12/2012,Amy Porter,AV21503,Avistaje,Callicebus B,6:20:19,6,Vocalizing
+OS91483,8/20/2012,Amy Porter,AV21513,Avistaje,UNK,6:42:23,6,Vocalizing
+OS91483,8/20/2012,Amy Porter,AV21515,Avistaje,UNK,7:01:34,7,Vocalizing
+OS91493,8/30/2012,Amy Porter,AV21523,Avistaje,UNK,10:53:11,10,Vocalizing
+OS91505,9/21/2012,Amy Porter,AV21535,AdLib,Kia/,6:51:27,6,VDU/VDU/
+OS91505,9/21/2012,Amy Porter,AV21536,Avistaje,UNK,13:58:56,13,Vocalizing
+OS91509,9/25/2012,Amy Porter,AV21540,Avistaje,Callicebus L,6:12:43,6,Vocalizing
+OS91511,9/27/2012,Amy Porter,AV21543,Avistaje,Callicebus K,6:23:00,6,Vocalizing
+OS91514,9/30/2012,Amy Porter,AV21546,Avistaje,UNK,7:21:20,7,Vocalizing
+OS91515,10/1/2012,Amy Porter,AV21550,Avistaje,UNK,10:29:26,10,Vocalizing
+OS91529,10/15/2012,Amy Porter,AV21561,Avistaje,UNK,8:14:49,8,Vocalizing
+OS91530,10/16/2012,Amy Porter,AV21564,Avistaje,Callicebus B,7:35:38,7,Vocalizing
+OS91530,10/16/2012,Amy Porter,AV21563,Focal,Kong/,7:40:47,7,VDU/
+OS91530,10/16/2012,Amy Porter,AV21563,Focal,Katta/,7:44:09,7,VDU/
+OS91537,10/23/2012,Amy Porter,AV21569,Avistaje,Callicebus K,6:16:56,6,Vocalizing
+OS91537,10/23/2012,Amy Porter,AV21570,Focal,Luciferus/,7:13:35,7,VDU/
+OS91542,10/28/2012,Amy Porter,AV21578,Avistaje,Callicebus G,6:10:18,6,Vocalizing
+OS91543,10/29/2012,Amy Porter,AV21580,Avistaje,UNK,7:07:30,7,Vocalizing
+OS91548,11/3/2012,Amy Porter,AV21583,AdLib,,7:04:00,7,VBG/VDU/
+OS91548,11/3/2012,Amy Porter,AV21584,AdLib,Bongo/,13:14:06,13,VBG/VDU/
+OS91551,11/6/2012,Amy Porter,AV21587,Focal,Katta/,7:14:08,7,VDU/
+OS91573,11/28/2012,Amy Porter,AV21601,Avistaje,UNK,6:15:09,6,Vocalizing
+OS91573,11/28/2012,Amy Porter,AV21602,Avistaje,UNK,6:18:33,6,Vocalizing
+OS91573,11/28/2012,Amy Porter,AV21600,Focal,Katta/,6:29:32,6,VDU/
+OS91579,12/4/2012,Amy Porter,AV21606,Avistaje,UNK,6:20:45,6,Vocalizing
+OS91579,12/4/2012,Amy Porter,AV21607,AdLib,Luciferus/,6:25:35,6,VDU/
+OS91579,12/4/2012,Amy Porter,AV21607,Focal,Luciferus/,6:48:04,6,VDU/STL/
+OS91579,12/4/2012,Amy Porter,AV21607,AdLib,Luciferus/,7:24:25,7,BG/BG/BG/BG/BG/VDU/
+OS09001,7/4/2007,Anthony Di Fiore,AV09908,Avistaje,UNK,16:01:00,16,Vocalizing
+OS09003,7/6/2007,Anthony Di Fiore,AV09909,Avistaje,UNK,6:07:00,6,Vocalizing
+OS09003,7/6/2007,Anthony Di Fiore,AV09011,Avistaje,UNK,8:44:00,8,Vocalizing
+OS09925,1/5/2008,Anthony Di Fiore,AV99952,Avistaje,UNK,14:20:00,14,Vocalizing
+OS09925,1/5/2008,Anthony Di Fiore,AV09953,Avistaje,UNK,14:36:00,14,Vocalizing
+OS09926,1/6/2008,Anthony Di Fiore,AV09958,Avistaje,UNK,7:25:00,7,Vocalizing
+OS09927,1/7/2008,Anthony Di Fiore,AV09965,Avistaje,UNK,5:55:00,5,Vocalizing
+OS09928,1/8/2008,Anthony Di Fiore,AV09969,Avistaje,Callicebus H,5:33:00,5,Vocalizing
+OS09928,1/8/2008,Anthony Di Fiore,AV09970,Avistaje,UNK,8:44:00,8,Vocalizing
+OS09929,1/9/2008,Anthony Di Fiore,AV09975,Avistaje,Callicebus H,6:27:00,6,Vocalizing
+OS09929,1/9/2008,Anthony Di Fiore,AV09976,Avistaje,Callicebus K,6:31:00,6,Vocalizing
+OS09930,1/10/2008,Anthony Di Fiore,AV09980,Avistaje,Callicebus Y,8:18:00,8,Vocalizing
+OS09931,1/11/2008,Anthony Di Fiore,AV09984,Avistaje,UNK,5:55:00,5,Vocalizing
+OS09932,1/12/2008,Anthony Di Fiore,AV09994,Avistaje,Callicebus L,8:10:00,8,Vocalizing
+OS09934,1/14/2008,Anthony Di Fiore,AV99972,Avistaje,UNK,8:14:00,8,Vocalizing
+OS09934,1/14/2008,Anthony Di Fiore,AV99973,Avistaje,UNK,10:19:00,10,Vocalizing
+OS09934,1/14/2008,Anthony Di Fiore,AV99975,Avistaje,UNK,10:55:00,10,Vocalizing
+OS09934,1/14/2008,Anthony Di Fiore,AV99976,Avistaje,UNK,16:50:00,16,Vocalizing
+OS90002,6/11/2008,Anthony Di Fiore,AV90004,Avistaje,Group,11:13:00,11,Vocalizing
+OS90003,6/12/2008,Anthony Di Fiore,AV90005,Avistaje,UNK,5:45:00,5,Vocalizing
+OS90003,6/12/2008,Anthony Di Fiore,AV90007,Avistaje,UNK,6:25:00,6,Vocalizing
+OS90008,6/17/2008,Anthony Di Fiore,AV90018,Avistaje,UNK,9:34:00,9,Vocalizing
+OS90010,6/18/2008,Anthony Di Fiore,AV90023,Avistaje,UNK,9:21:00,9,Vocalizing
+OS90010,6/18/2008,Anthony Di Fiore,AV90024,Avistaje,UNK,9:33:00,9,Vocalizing
+OS90013,6/22/2008,Anthony Di Fiore,AV90042,Avistaje,UNK,16:20:00,16,Vocalizing
+OS90014,6/23/2008,Anthony Di Fiore,AV90043,Avistaje,UNK,6:30:00,6,Vocalizing
+OS90017,6/26/2008,Anthony Di Fiore,AV90046,Avistaje,Callicebus K,5:45:00,5,Vocalizing
+OS90017,6/26/2008,Anthony Di Fiore,AV90047,Avistaje,UNK,7:15:00,7,Vocalizing
+OS90017,6/26/2008,Anthony Di Fiore,AV90050,Avistaje,UNK,7:59:00,7,Vocalizing
+OS90017,6/26/2008,Anthony Di Fiore,AV90049,Avistaje,UNK,8:56:00,8,Vocalizing
+OS90017,6/26/2008,Anthony Di Fiore,AV90053,Avistaje,UNK,9:29:00,9,Vocalizing
+OS90018,6/27/2008,Anthony Di Fiore,AV90055,Avistaje,UNK,6:34:00,6,Vocalizing
+OS90018,6/27/2008,Anthony Di Fiore,AV90054,Avistaje,UNK,7:46:00,7,Vocalizing
+OS90019,6/28/2008,Anthony Di Fiore,AV90059,Avistaje,UNK,6:20:00,6,Vocalizing
+OS90019,6/28/2008,Anthony Di Fiore,AV90060,Avistaje,UNK,6:30:00,6,Vocalizing
+OS90019,6/28/2008,Anthony Di Fiore,AV90061,Avistaje,UNK,7:03:00,7,Vocalizing
+OS90019,6/28/2008,Anthony Di Fiore,AV90062,Avistaje,UNK,7:25:00,7,Vocalizing
+OS90111,1/11/2009,Anthony Di Fiore,AV90119,Avistaje,UNK,15:14:26,15,Vocalizing
+OS90116,1/16/2009,Anthony Di Fiore,AV90134,Avistaje,Callicebus K,6:10:50,6,Vocalizing
+OS99009,7/12/2009,Anthony Di Fiore,AV99028,Avistaje,UNK,11:10:15,11,Vocalizing
+OS99009,7/12/2009,Anthony Di Fiore,AV99029,Avistaje,UNK,11:45:08,11,Vocalizing
+OS99018,7/14/2009,Anthony Di Fiore,AV99032,Avistaje,UNK,6:11:57,6,Vocalizing
+OS99018,7/14/2009,Anthony Di Fiore,AV99033,Avistaje,UNK,6:13:25,6,Vocalizing
+OS99201,3/13/2010,Anthony Di Fiore,AV99201,Avistaje,UNK,10:41:00,10,Vocalizing
+OS99202,3/14/2010,Anthony Di Fiore,AV99220,Avistaje,UNK,10:37:00,10,Vocalizing
+OS98037,6/22/2010,Anthony Di Fiore,AV98048,Avistaje,UNK,7:47:03,7,Vocalizing
+OS98037,6/22/2010,Anthony Di Fiore,AV98051,Avistaje,UNK,10:00:25,10,Vocalizing
+OS98037,6/22/2010,Anthony Di Fiore,AV98050,Avistaje,UNK,13:30:21,13,Vocalizing
+OS98018,6/27/2010,Anthony Di Fiore,AV98069,Avistaje,Callicebus K,13:59:29,13,Vocalizing
+OS98029,7/6/2010,Anthony Di Fiore,AV98090,Avistaje,UNK,10:08:12,10,Vocalizing
+OS98029,7/6/2010,Anthony Di Fiore,AV98091,Avistaje,UNK,11:16:26,11,Vocalizing
+OS98030,7/7/2010,Anthony Di Fiore,AV98094,Avistaje,UNK,11:40:51,11,Vocalizing
+OS98036,7/13/2010,Anthony Di Fiore,AV98114,Avistaje,UNK,6:22:00,6,Vocalizing
+OS99211,1/8/2011,Anthony Di Fiore,AV95000,Avistaje,Callicebus K,7:30:52,7,Vocalizing
+OS99216,1/13/2011,Anthony Di Fiore,AV95021,Avistaje,UNK,6:43:52,6,Vocalizing
+OS99220,1/17/2011,Anthony Di Fiore,AV95040,Avistaje,UNK,8:49:53,8,Vocalizing
+OS99224,1/21/2011,Anthony Di Fiore,AV95068,Avistaje,Callicebus H,6:58:26,6,Vocalizing
+OS99224,1/21/2011,Anthony Di Fiore,AV95061,Avistaje,Callicebus Y?,7:03:19,7,Vocalizing
+OS99225,1/22/2011,Anthony Di Fiore,AV95072,Avistaje,Group,7:36:03,7,Vocalizing
+OS99530,6/19/2011,Anthony Di Fiore,AV97585,Avistaje,UNK,6:45:01,6,Vocalizing
+OS99535,12/8/2011,Anthony Di Fiore,AV99916,Avistaje,UNK,6:45:16,6,Vocalizing
+OS99535,12/8/2011,Anthony Di Fiore,AV99917,Avistaje,UNK,6:57:46,6,Vocalizing
+OS99535,12/8/2011,Anthony Di Fiore,AV99918,Avistaje,UNK,7:01:27,7,Vocalizing
+OS99535,12/8/2011,Anthony Di Fiore,AV99920,Avistaje,UNK,9:39:35,9,Vocalizing
+OS99536,12/9/2011,Anthony Di Fiore,AV99924,Avistaje,UNK,6:39:46,6,Vocalizing
+OS99536,12/9/2011,Anthony Di Fiore,AV99927,Avistaje,UNK,8:36:40,8,Vocalizing
+OS99538,12/10/2011,Anthony Di Fiore,AV99931,Avistaje,UNK,14:41:12,14,Vocalizing
+OS99539,12/12/2011,Anthony Di Fiore,AV99942,Avistaje,UNK,12:18:08,12,Vocalizing
+OS98045,5/26/2012,Anthony Di Fiore,AV99047,Avistaje,UNK,10:01:54,10,Vocalizing
+OS98053,6/3/2012,Anthony Di Fiore,AV99082,Avistaje,UNK,13:50:36,13,Vocalizing
+OS98060,6/10/2012,Anthony Di Fiore,AV99105,Avistaje,UNK,11:15:09,11,Vocalizing
+OS98065,6/15/2012,Anthony Di Fiore,AV99122,Avistaje,UNK,5:42:46,5,Vocalizing
+OS98065,6/15/2012,Anthony Di Fiore,AV99123,Avistaje,UNK,5:55:00,5,Vocalizing
+OS98067,6/17/2012,Anthony Di Fiore,AV99129,Avistaje,Callicebus K,5:28:06,5,Vocalizing
+OS98068,6/18/2012,Anthony Di Fiore,AV99133,Avistaje,UNK,6:16:07,6,Vocalizing
+OS98083,5/16/2013,Anthony Di Fiore,AV99176,Avistaje,UNK,9:37:24,9,Vocalizing
+OS98100,6/2/2013,Anthony Di Fiore,AV97838,Avistaje,UNK,9:20:00,9,Vocalizing
+OS98100,6/2/2013,Anthony Di Fiore,AV97839,Avistaje,UNK,9:23:57,9,Vocalizing
+OS98103,6/5/2013,Anthony Di Fiore,AV97844,Avistaje,UNK,5:29:00,5,Vocalizing
+OS98103,6/5/2013,Anthony Di Fiore,AV97845,Avistaje,UNK,11:21:53,11,Vocalizing
+OS98108,6/10/2013,Anthony Di Fiore,AV97866,Avistaje,Callicebus K,7:44:51,7,Vocalizing
+OS98108,6/10/2013,Anthony Di Fiore,AV97859,Avistaje,UNK,9:23:24,9,Vocalizing
+OS98108,6/10/2013,Anthony Di Fiore,AV97865,Avistaje,Callicebus K,9:32:05,9,Vocalizing
+OS98109,6/11/2013,Anthony Di Fiore,AV97863,Avistaje,UNK,8:44:14,8,Vocalizing
+OS98125,12/11/2013,Anthony Di Fiore,AV97916,Avistaje,UNK,14:14:06,14,Vocalizing
+OS98127,12/13/2013,Anthony Di Fiore,AV97929,Avistaje,UNK,13:25:15,13,Vocalizing
+OS99553,7/2/2014,Anthony Di Fiore,AV99988,Avistaje,UNK,8:19:44,8,Vocalizing
+OS99553,7/2/2014,Anthony Di Fiore,AV99990,Avistaje,UNK,13:22:04,13,Vocalizing
+OS99564,7/14/2014,Anthony Di Fiore,AV99265,Avistaje,UNK,9:52:35,9,Vocalizing
+OS99570,7/20/2014,Anthony Di Fiore,AV99281,Avistaje,UNK,10:58:04,10,Vocalizing
+OS99573,7/23/2014,Anthony Di Fiore,AV99295,Avistaje,UNK,13:17:43,13,Vocalizing
+OS99575,7/25/2014,Anthony Di Fiore,AV99302,Avistaje,UNK,9:46:40,9,Vocalizing
+OS99589,1/1/2015,Anthony Di Fiore,AV99596,Avistaje,UNK,9:01:06,9,Vocalizing
+OS99592,1/4/2015,Anthony Di Fiore,AV99615,Avistaje,UNK,7:20:15,7,Vocalizing
+OS99597,1/9/2015,Anthony Di Fiore,AV99633,Avistaje,UNK,8:36:17,8,Vocalizing
+OS99598,1/10/2015,Anthony Di Fiore,AV99636,Avistaje,Callicebus B,6:28:11,6,Vocalizing
+OS99604,1/15/2015,Anthony Di Fiore,AV99648,Avistaje,Callicebus B,7:17:22,7,Vocalizing
+OS99606,1/17/2015,Anthony Di Fiore,AV99654,Avistaje,UNK,11:48:54,11,Vocalizing
+OS99613,1/23/2015,Anthony Di Fiore,AV99682,Avistaje,UNK,6:51:30,6,Vocalizing
+OS99622,5/27/2015,Anthony Di Fiore,AV99957,Avistaje,UNK,8:49:25,8,Vocalizing
+OS99626,5/31/2015,Anthony Di Fiore,AV99333,Avistaje,UNK,14:20:00,14,Vocalizing
+OS99626,5/31/2015,Anthony Di Fiore,AV99334,Avistaje,UNK,14:39:03,14,Vocalizing
+OS99658,1/5/2016,Anthony Di Fiore,AV99408,Avistaje,UNK,7:29:19,7,Vocalizing
+OS99658,1/5/2016,Anthony Di Fiore,AV99410,Avistaje,UNK,7:36:20,7,Vocalizing
+OS99659,1/6/2016,Anthony Di Fiore,AV99415,Avistaje,UNK,6:46:47,6,Vocalizing
+OS99660,1/7/2016,Anthony Di Fiore,AV99424,Avistaje,UNK,7:09:00,7,Vocalizing
+OS99660,1/7/2016,Anthony Di Fiore,AV99427,Avistaje,UNK,8:09:05,8,Vocalizing
+OS99660,1/7/2016,Anthony Di Fiore,AV99428,Avistaje,UNK,9:36:02,9,Vocalizing
+OS99661,1/8/2016,Anthony Di Fiore,AV99432,Avistaje,Callicebus K,6:22:18,6,Vocalizing
+OS99661,1/8/2016,Anthony Di Fiore,AV99433,Avistaje,UNK,6:46:03,6,Vocalizing
+OS99662,1/9/2016,Anthony Di Fiore,AV99438,Avistaje,UNK,7:15:31,7,Vocalizing
+OS99666,1/13/2016,Anthony Di Fiore,AV99464,Avistaje,UNK,15:22:15,15,Vocalizing
+OS99670,1/17/2016,Anthony Di Fiore,AV99484,Avistaje,Callicebus K,7:05:28,7,Vocalizing
+OS99676,6/14/2016,Anthony Di Fiore,AV99506,Avistaje,UNK,8:19:15,8,Vocalizing
+OS99681,6/19/2016,Anthony Di Fiore,AV99543,Avistaje,UNK,11:55:55,11,Vocalizing
+OS99683,6/21/2016,Anthony Di Fiore,AV99560,Avistaje,UNK,9:46:35,9,Vocalizing
+OS21758,7/17/2015,Ezra Mendales,AV29114,Avistaje,UNK,9:49:36,9,Vocalizing
+OS21758,7/17/2015,Ezra Mendales,AV29115,Avistaje,UNK,9:57:18,9,Vocalizing
+OS21764,7/23/2015,Ezra Mendales,AV29130,Avistaje,UNK,8:33:24,8,Vocalizing
+OS21778,8/6/2015,Ezra Mendales,AV29159,AdLib,Katta/Kong/,6:01:00,6,VDU/
+OS21778,8/6/2015,Ezra Mendales,AV29158,Avistaje,UNK,6:13:01,6,Vocalizing
+OS21778,8/6/2015,Ezra Mendales,AV29159,Avistaje,Callicebus K,6:30:06,6,Vocalizing
+OS21778,8/6/2015,Ezra Mendales,AV29160,Avistaje,UNK,7:01:56,7,Vocalizing
+OS21778,8/6/2015,Ezra Mendales,AV29161,Avistaje,UNK,7:10:21,7,Vocalizing
+OS21778,8/6/2015,Ezra Mendales,AV29159,AdLib,Kong/Katta/,7:13:53,7,VDU/
+OS21782,8/10/2015,Ezra Mendales,AV29166,Avistaje,UNK,7:01:31,7,Vocalizing
+OS21792,8/20/2015,Ezra Mendales,AV29179,Avistaje,UNK,6:47:43,6,Vocalizing
+OS21797,8/25/2015,Ezra Mendales,AV29186,AdLib,Kong/Katta/,6:59:14,6,VDU/
+OS21798,8/26/2015,Ezra Mendales,AV29188,Avistaje,Callicebus K,5:50:00,5,Vocalizing
+OS21811,9/8/2015,Ezra Mendales,AV29206,Avistaje,UNK,6:45:18,6,Vocalizing
+OS21812,9/9/2015,Ezra Mendales,AV29208,Avistaje,UNK,7:13:30,7,Vocalizing
+OS21813,9/10/2015,Ezra Mendales,AV29210,Avistaje,Callicebus K,6:02:09,6,Vocalizing
+OS21813,9/10/2015,Ezra Mendales,AV29211,Focal,Luciferus/,6:46:00,6,VDU/
+OS21817,9/14/2015,Ezra Mendales,AV29216,Avistaje,UNK,7:50:46,7,Vocalizing
+OS21821,9/18/2015,Ezra Mendales,AV29223,Avistaje,Callicebus L,9:30:00,9,Vocalizing
+OS21822,9/19/2015,Ezra Mendales,AV29224,Avistaje,Callicebus L,6:31:57,6,Vocalizing
+OS21823,9/20/2015,Ezra Mendales,AV29226,Avistaje,Callicebus L,6:35:53,6,Vocalizing
+OS21824,9/21/2015,Ezra Mendales,AV29229,Avistaje,Callicebus L,6:14:00,6,Vocalizing
+OS21824,9/21/2015,Ezra Mendales,AV29230,Avistaje,Callicebus B,6:34:39,6,Vocalizing
+OS21824,9/21/2015,Ezra Mendales,AV29231,Avistaje,UNK,6:36:35,6,Vocalizing
+OS21824,9/21/2015,Ezra Mendales,AV29232,Avistaje,UNK,6:59:12,6,Vocalizing
+OS21828,9/25/2015,Ezra Mendales,AV29242,Avistaje,UNK,6:36:09,6,Vocalizing
+OS21831,9/28/2015,Ezra Mendales,AV29246,Avistaje,Callicebus K,6:48:19,6,Vocalizing
+OS21832,9/29/2015,Ezra Mendales,AV29250,Avistaje,Callicebus B,6:56:46,6,Vocalizing
+OS21832,9/29/2015,Ezra Mendales,AV29249,AdLib,Kong/Katta/,7:08:00,7,VDU/
+OS21832,9/29/2015,Ezra Mendales,AV29249,Focal,Kahlo/,7:26:00,7,VDU/
+OS21832,9/29/2015,Ezra Mendales,AV29249,Focal,Kong/,8:14:00,8,VDU/
+OS21832,9/29/2015,Ezra Mendales,AV29249,AdLib,Katta/Kong/,8:40:00,8,VDU/
+OS21832,9/29/2015,Ezra Mendales,AV29250,AdLib,Bongo/B-Adult Female/,15:14:00,15,VDU/
+OS21832,9/29/2015,Ezra Mendales,AV29250,AdLib,B-Adult Female/Bongo/,15:31:00,15,VDU/
+OS21832,9/29/2015,Ezra Mendales,AV29249,AdLib,Katta/Kong/,15:50:05,15,VDU/
+OS21832,9/29/2015,Ezra Mendales,AV29250,AdLib,B-Adult Female/Bongo/,15:54:00,15,VDU/
+OS21832,9/29/2015,Ezra Mendales,AV29249,AdLib,Katta/Kong/,16:17:26,16,VDU/
+OS21832,9/29/2015,Ezra Mendales,AV29250,AdLib,B-Adult Female/Bongo/,16:20:04,16,VDU/
+OS21833,9/30/2015,Ezra Mendales,AV29252,Avistaje,Callicebus K,6:05:43,6,Vocalizing
+OS21833,9/30/2015,Ezra Mendales,AV29253,Avistaje,Callicebus B,6:52:29,6,Vocalizing
+OS21838,10/5/2015,Ezra Mendales,AV29257,Avistaje,Callicebus B,8:00:00,8,Vocalizing
+OS21849,11/5/2015,Ezra Mendales,AV29276,Avistaje,UNK,6:42:59,6,Vocalizing
+OS21849,11/5/2015,Ezra Mendales,AV29277,Avistaje,Callicebus L,6:47:56,6,Vocalizing
+OS21849,11/5/2015,Ezra Mendales,AV29278,Avistaje,UNK,6:51:16,6,Vocalizing
+OS21849,11/5/2015,Ezra Mendales,AV29281,AdLib,B-Adult Female/Bongo/,9:05:00,9,SAGM/VDU/
+OS21853,11/9/2015,Ezra Mendales,AV29288,AdLib,Luciferus/,6:59:00,6,VCHI/APR L-INF14A/VDU/APA Lulu/
+OS21857,11/13/2015,Ezra Mendales,AV29296,Avistaje,Callicebus L,7:26:04,7,Vocalizing
+OS21858,11/14/2015,Ezra Mendales,AV29300,Avistaje,Callicebus L,7:02:06,7,Vocalizing
+OS21858,11/14/2015,Ezra Mendales,AV29301,Avistaje,Callicebus K,8:06:01,8,Vocalizing
+OS21858,11/14/2015,Ezra Mendales,AV29302,Avistaje,Callicebus B,8:11:01,8,Vocalizing
+OS21866,11/22/2015,Ezra Mendales,AV29312,Avistaje,Callicebus K,5:58:55,5,Vocalizing
+OS21866,11/22/2015,Ezra Mendales,AV29312,Focal,Kong/,6:14:00,6,VDU/
+OS21866,11/22/2015,Ezra Mendales,AV29312,Focal,Katta/,6:34:00,6,VDU/
+OS21867,11/23/2015,Ezra Mendales,AV29314,AdLib,Katta/Kong/,6:48:00,6,VDU/
+OS21868,11/24/2015,Ezra Mendales,AV29315,Avistaje,Callicebus K,6:45:16,6,Vocalizing
+OS21877,12/3/2015,Ezra Mendales,AV29328,Avistaje,Callicebus K,6:01:35,6,Vocalizing
+OS21877,12/3/2015,Ezra Mendales,AV29330,Avistaje,Callicebus L,7:32:22,7,Vocalizing
+OS21878,12/4/2015,Ezra Mendales,AV29334,Avistaje,Callicebus K,6:25:19,6,Vocalizing
+OS21878,12/4/2015,Ezra Mendales,AV29335,Avistaje,UNK,7:36:09,7,Vocalizing
+OS21883,12/9/2015,Ezra Mendales,AV29349,Avistaje,UNK,11:20:23,11,Vocalizing
+OS21886,12/12/2015,Ezra Mendales,AV29353,Avistaje,Callicebus K,6:18:43,6,Vocalizing
+OS92144,4/28/2012,Nabilah Rawji,AV23178,AdLib,,11:01:42,11,RVX  (SO)/DU/DU/DU/CC/
+OS92162,5/16/2012,Nabilah Rawji,AV23189,AdLib,,10:35:08,10,VDU/
+OS92166,5/20/2012,Nabilah Rawji,AV23193,Avistaje,Callicebus K,6:38:16,6,Vocalizing
+OS92166,5/20/2012,Nabilah Rawji,AV23193,AdLib,,7:17:24,7,VDU/
+OS92186,6/10/2012,Nabilah Rawji,AV23215,Focal,Bandito/,7:10:27,7,VDU/VDU/
+OS92188,6/12/2012,Nabilah Rawji,AV23222,Avistaje,Callicebus unk,9:38:55,9,Vocalizing
+OS92194,6/18/2012,Nabilah Rawji,AV23228,Avistaje,Callicebus unk,9:09:26,9,Vocalizing
+OS92194,6/18/2012,Nabilah Rawji,AV23229,Avistaje,Callicebus unk,9:21:50,9,Vocalizing
+OS92197,6/21/2012,Nabilah Rawji,AV23232,Avistaje,Callicebus Unk,8:25:54,8,Vocalizing
+OS92198,6/22/2012,Nabilah Rawji,AV23234,AdLib,Bongo/,9:23:44,9,RXX/WH/DU/BGO/
+OS92217,7/11/2012,Nabilah Rawji,AV23263,Avistaje,Group,13:55:58,13,Vocalizing
+OS92226,7/20/2012,Nabilah Rawji,AV23273,AdLib,UNK/,7:25:01,7,VDU/
+OS92227,7/21/2012,Nabilah Rawji,AV23277,Avistaje,Callicebus K,6:31:44,6,Vocalizing
+OS92227,7/21/2012,Nabilah Rawji,AV23277,Focal,Katta/,7:07:44,7,VDU/
+OS92227,7/21/2012,Nabilah Rawji,AV23278,Avistaje,UNK,7:54:09,7,Vocalizing
+OS92227,7/21/2012,Nabilah Rawji,AV23279,Avistaje,UNK,7:55:41,7,Vocalizing
+OS92228,7/22/2012,Nabilah Rawji,AV23283,Avistaje,UNK,6:06:29,6,Vocalizing
+OS92232,7/26/2012,Nabilah Rawji,AV23289,Avistaje,UNK,9:39:45,9,Vocalizing
+OS92240,8/3/2012,Nabilah Rawji,AV23304,Avistaje,Callicebus B,9:17:43,9,Vocalizing
+OS92243,8/6/2012,Nabilah Rawji,AV23305,Avistaje,Callicebus B,5:50:19,5,Vocalizing
+OS92243,8/6/2012,Nabilah Rawji,AV23307,Avistaje,UNK,5:50:55,5,Vocalizing
+OS92243,8/6/2012,Nabilah Rawji,AV23303,AdLib,Kong/,5:55:52,5,VDU/
+OS92243,8/6/2012,Nabilah Rawji,AV23303,AdLib,,6:05:06,6,VDU/
+OS92243,8/6/2012,Nabilah Rawji,AV23306,Avistaje,UNK,6:05:48,6,Vocalizing
+OS92248,8/11/2012,Nabilah Rawji,AV23311,Avistaje,UNK,8:02:06,8,Vocalizing
+OS92249,8/12/2012,Nabilah Rawji,AV23317,Avistaje,UNK,7:15:15,7,Vocalizing
+OS92249,8/12/2012,Nabilah Rawji,AV23314,Avistaje,UNK,7:15:40,7,Vocalizing
+OS92249,8/12/2012,Nabilah Rawji,AV23321,Avistaje,UNK,7:15:59,7,Vocalizing
+OS92256,8/19/2012,Nabilah Rawji,AV23328,Avistaje,UNK,7:58:51,7,Vocalizing
+OS92256,8/19/2012,Nabilah Rawji,AV23324,AdLib,Luciferus/,8:00:00,8,WH/AR/PI/TL/DU//APR LU/WH/LVR LU/SFOA/
+OS92256,8/19/2012,Nabilah Rawji,AV23329,Avistaje,UNK,8:10:52,8,Vocalizing
+OS92257,8/20/2012,Nabilah Rawji,AV23325,AdLib,Luciferus/,6:41:00,6,VWH/VDU/
+OS92257,8/20/2012,Nabilah Rawji,AV23325,AdLib,Luciferus/,7:03:00,7,VBG/DU/BG/OU/BG/OU/DU
+OS92257,8/20/2012,Nabilah Rawji,AV23331,Avistaje,UNK,11:24:23,11,Vocalizing
+OS92263,8/26/2012,Nabilah Rawji,AV23336,Avistaje,UNK,11:51:35,11,Vocalizing
+OS92269,9/2/2012,Nabilah Rawji,AV23344,Avistaje,UNK,7:42:17,7,Vocalizing
+OS92269,9/2/2012,Nabilah Rawji,AV23345,Avistaje,UNK,7:47:12,7,Vocalizing
+OS92274,9/16/2012,Nabilah Rawji,AV23347,Avistaje,Callicebus K,6:05:54,6,Vocalizing
+OS92274,9/16/2012,Nabilah Rawji,AV23347,AdLib,Kong/,6:24:05,6,VBG/DU/
+OS92274,9/16/2012,Nabilah Rawji,AV23347,AdLib,Kong/,6:45:58,6,VOU/DU/
+OS92274,9/16/2012,Nabilah Rawji,AV23347,Focal,Katta/,6:55:49,6,VDU/
+OS92274,9/16/2012,Nabilah Rawji,AV23351,Avistaje,UNK,7:30:43,7,Vocalizing
+OS92283,9/26/2012,Nabilah Rawji,AV23355,AdLib,Kong/,6:00:30,6,VDU/
+OS92283,9/26/2012,Nabilah Rawji,AV23356,Avistaje,Callicebus B,6:54:43,6,Vocalizing
+OS92287,9/30/2012,Nabilah Rawji,AV23359,AdLib,Kong/,6:00:50,6,VDU/
+OS92288,10/1/2012,Nabilah Rawji,AV23362,Avistaje,UNK,6:57:25,6,Vocalizing
+OS92289,10/2/2012,Nabilah Rawji,AV23366,Avistaje,UNK,12:14:34,12,Vocalizing
+OS92295,10/8/2012,Nabilah Rawji,AV23374,Avistaje,UNK,7:58:24,7,Vocalizing
+OS92296,10/9/2012,Nabilah Rawji,AV23376,Avistaje,UNK,7:40:59,7,Vocalizing
+OS92296,10/9/2012,Nabilah Rawji,AV23377,Avistaje,UNK,7:45:31,7,Vocalizing
+OS92296,10/9/2012,Nabilah Rawji,AV23375,Focal,Lulu/,7:57:37,7,RVA (LA)/VDU/
+OS92296,10/9/2012,Nabilah Rawji,AV23375,AdLib,,8:40:12,8,VDU/VOU/
+OS92296,10/9/2012,Nabilah Rawji,AV23378,Avistaje,UNK,12:35:48,12,Vocalizing
+OS92301,10/14/2012,Nabilah Rawji,AV23381,Avistaje,Callicebus K,6:08:22,6,Vocalizing
+OS92310,10/23/2012,Nabilah Rawji,AV23396,Avistaje,Callicebus K,7:23:20,7,Vocalizing
+OS92310,10/23/2012,Nabilah Rawji,AV23394,Avistaje,Callicebus B,7:23:28,7,Vocalizing
+OS92316,10/29/2012,Nabilah Rawji,AV23404,Avistaje,Callicebus G,14:32:45,14,Vocalizing
+OS92318,10/31/2012,Nabilah Rawji,AV23407,Avistaje,UNK,11:52:01,11,Vocalizing
+OS92326,11/8/2012,Nabilah Rawji,AV23418,Avistaje,Callicebus K,6:06:33,6,Vocalizing
+OS92326,11/8/2012,Nabilah Rawji,AV23418,AdLib,Kong/,8:50:24,8,VDU/
+OS92341,11/23/2012,Nabilah Rawji,AV23430,Avistaje,UNK,7:56:24,7,Vocalizing
+OS92342,11/24/2012,Nabilah Rawji,AV23426,Avistaje,UNK,7:00:49,7,Vocalizing
+OS92342,11/24/2012,Nabilah Rawji,AV23427,Avistaje,UNK,12:14:51,12,Vocalizing
+OS92345,11/27/2012,Nabilah Rawji,AV23432,Avistaje,Callicebus B,10:09:08,10,Vocalizing
+OS92359,12/11/2012,Nabilah Rawji,AV23454,Avistaje,Callicebus K,7:00:30,7,Vocalizing
+OS92363,12/15/2012,Nabilah Rawji,AV23468,Avistaje,UNK,7:15:15,7,Vocalizing
+OS92364,12/16/2012,Nabilah Rawji,AV23460,Avistaje,Callicebus D,6:47:44,6,Vocalizing
+OS92365,12/17/2012,Nabilah Rawji,AV23466,AdLib,Luciferus/,6:20:38,6,VDU/
+OS92365,12/17/2012,Nabilah Rawji,AV23470,Avistaje,Callicebus D,6:23:55,6,Vocalizing
+OS92365,12/17/2012,Nabilah Rawji,AV23469,Avistaje,UNK,6:27:52,6,Vocalizing
+OS92367,12/19/2012,Nabilah Rawji,AV23471,AdLib,,10:50:06,10,VDU/
+OS92367,12/19/2012,Nabilah Rawji,AV23472,Avistaje,Callicebus D,10:50:38,10,Vocalizing
+OS92372,12/24/2012,Nabilah Rawji,AV23477,Avistaje,Callicebus K,7:35:49,7,Vocalizing
+OS92376,12/28/2012,Nabilah Rawji,AV23482,Avistaje,Callicebus K,6:55:24,6,Vocalizing
+OS92376,12/28/2012,Nabilah Rawji,AV23483,Avistaje,Callicebus B,7:18:51,7,Vocalizing
+OS92377,12/29/2012,Nabilah Rawji,AV23485,Avistaje,Callicebus D,8:16:36,8,Vocalizing
+OS92378,12/30/2012,Nabilah Rawji,AV23490,Avistaje,Callicebus D,7:40:55,7,Vocalizing
+OS92378,12/30/2012,Nabilah Rawji,AV23488,Avistaje,Callicebus L,13:00:43,13,Vocalizing
+OS92383,1/4/2013,Nabilah Rawji,AV23494,Avistaje,Callicebus B,9:21:00,9,Vocalizing
+OS92383,1/4/2013,Nabilah Rawji,AV23493,AdLib,Luciferus/,9:22:48,9,VDU/
+OS92383,1/4/2013,Nabilah Rawji,AV23495,Avistaje,Callicebus B,11:07:36,11,Vocalizing
+OS92384,1/5/2013,Nabilah Rawji,AV23498,Avistaje,UNK,7:55:07,7,Vocalizing
+OS92401,1/13/2013,Nabilah Rawji,AV23511,Avistaje,UNK,7:03:36,7,Vocalizing
+OS92403,1/15/2013,Nabilah Rawji,AV23514,Avistaje,Callicebus B,6:23:40,6,Vocalizing
+OS92403,1/15/2013,Nabilah Rawji,AV23514,AdLib,,6:42:33,6,VDU/
+OS92404,1/16/2013,Nabilah Rawji,AV23516,Avistaje,Callicebus B,5:59:21,5,Vocalizing
+OS92404,1/16/2013,Nabilah Rawji,AV23517,Avistaje,UNK,6:08:53,6,Vocalizing
+OS92404,1/16/2013,Nabilah Rawji,AV23516,AdLib,,6:13:24,6,VDU/
+OS92404,1/16/2013,Nabilah Rawji,AV23518,Avistaje,Callicebus K,6:19:15,6,Vocalizing
+OS92404,1/16/2013,Nabilah Rawji,AV23516,AdLib,,7:00:06,7,VDU/
+OS92410,1/22/2013,Nabilah Rawji,AV23528,Avistaje,Callicebus B,6:00:32,6,Vocalizing
+OS92410,1/22/2013,Nabilah Rawji,AV23527,Avistaje,Callicebus K,6:08:19,6,Vocalizing
+OS92410,1/22/2013,Nabilah Rawji,AV23527,Focal,Katta/,7:43:15,7,STT/VDU/
+OS92412,1/24/2013,Nabilah Rawji,AV23531,AdLib,,6:36:51,6,VDU/
+OS92412,1/24/2013,Nabilah Rawji,AV23532,Avistaje,Callicebus D,8:53:47,8,Vocalizing
+OS92412,1/24/2013,Nabilah Rawji,AV23531,AdLib,,8:54:34,8,VDU/
+OS92424,2/5/2013,Nabilah Rawji,AV23554,Avistaje,Callicebus K,6:28:53,6,Vocalizing
+OS92429,2/10/2013,Nabilah Rawji,AV23578,Avistaje,Callicebus K,8:03:39,8,Vocalizing
+OS92430,2/11/2013,Nabilah Rawji,AV23563,Avistaje,Callicebus L,9:01:19,9,Vocalizing
+OS92433,2/14/2013,Nabilah Rawji,AV23571,Avistaje,UNK,6:17:53,6,Vocalizing
+OS92433,2/14/2013,Nabilah Rawji,AV23572,Avistaje,Callicebus L,6:25:41,6,Vocalizing
+OS92433,2/14/2013,Nabilah Rawji,AV23572,AdLib,,6:33:21,6,VDU/
+OS92433,2/14/2013,Nabilah Rawji,AV23572,AdLib,,6:48:43,6,VDU/
+OS20904,12/23/2014,Silvy van Kuijk,AV27309,Avistaje,UNK,7:50:00,7,Vocalizing
+OS20905,12/24/2014,Silvy van Kuijk,AV27311,AdLib,Kong/,6:33:00,6,VDU/
+OS20905,12/24/2014,Silvy van Kuijk,AV27312,AdLib,Luciferus/,6:41:00,6,VDU/
+OS20905,12/24/2014,Silvy van Kuijk,AV27312,Avistaje,Callicebus L,6:50:00,6,Vocalizing
+OS20912,12/31/2014,Silvy van Kuijk,AV27329,Avistaje,Callicebus K,7:49:00,7,Vocalizing
+OS20914,1/2/2015,Silvy van Kuijk,AV27342,Avistaje,UNK,6:37:12,6,Vocalizing
+OS20914,1/2/2015,Silvy van Kuijk,AV27343,Avistaje,Callicebus K,6:50:45,6,Vocalizing
+OS20915,1/3/2015,Silvy van Kuijk,AV27351,Avistaje,UNK,9:08:35,9,Vocalizing
+OS20916,1/4/2015,Silvy van Kuijk,AV27354,Avistaje,Callicebus K,7:42:42,7,Vocalizing
+OS20916,1/4/2015,Silvy van Kuijk,AV27355,Avistaje,UNK,7:49:01,7,Vocalizing
+OS20916,1/4/2015,Silvy van Kuijk,AV27361,Avistaje,UNK,13:28:00,13,Vocalizing
+OS20918,1/6/2015,Silvy van Kuijk,AV27365,Avistaje,UNK,7:21:16,7,Vocalizing
+OS20919,1/7/2015,Silvy van Kuijk,AV27373,Avistaje,UNK,6:18:36,6,Vocalizing
+OS20919,1/7/2015,Silvy van Kuijk,AV27374,AdLib,BA/UNK/,7:14:00,7,DU/
+OS20925,1/13/2015,Silvy van Kuijk,AV27383,Avistaje,UNK,6:59:35,6,Vocalizing
+OS20925,1/13/2015,Silvy van Kuijk,AV27385,Avistaje,UNK,7:14:25,7,Vocalizing
+OS20927,1/15/2015,Silvy van Kuijk,AV27389,Avistaje,UNK,7:04:24,7,Vocalizing
+OS20927,1/15/2015,Silvy van Kuijk,AV27388,AdLib,LF/,7:23:00,7,VDU/
+OS20927,1/15/2015,Silvy van Kuijk,AV27388,Focal,Luciferus/,7:25:00,7,VDU/
+OS20927,1/15/2015,Silvy van Kuijk,AV27390,Avistaje,UNK,7:28:00,7,Vocalizing
+OS20928,1/16/2015,Silvy van Kuijk,AV27392,Avistaje,Callicebus K,15:03:00,15,Vocalizing
+OS20929,1/17/2015,Silvy van Kuijk,AV27394,Avistaje,UNK,9:21:13,9,Vocalizing
+OS20929,1/17/2015,Silvy van Kuijk,AV27395,Avistaje,UNK,10:27:48,10,Vocalizing
+OS20932,1/20/2015,Silvy van Kuijk,AV27397,Avistaje,UNK,7:04:00,7,Vocalizing
+OS20932,1/20/2015,Silvy van Kuijk,AV27400,AdLib,Kong/Katta/INF12/,7:07:00,7,VDU/
+OS20932,1/20/2015,Silvy van Kuijk,AV27410,Avistaje,UNK,7:11:00,7,Vocalizing
+OS20932,1/20/2015,Silvy van Kuijk,AV27400,AdLib,Kong/Katta/INF12/,7:13:00,7,VDU/
+OS20935,1/23/2015,Silvy van Kuijk,AV27405,Avistaje,UNK,6:56:00,6,Vocalizing
+OS20935,1/23/2015,Silvy van Kuijk,AV27406,Avistaje,UNK,7:17:09,7,Vocalizing
+OS20935,1/23/2015,Silvy van Kuijk,AV27407,Avistaje,UNK,7:54:00,7,Vocalizing
+OS20940,1/28/2015,Silvy van Kuijk,AV27414,Avistaje,UNK,9:27:04,9,Vocalizing
+OS20942,1/30/2015,Silvy van Kuijk,AV27418,Avistaje,UNK,7:35:00,7,Vocalizing
+OS20942,1/30/2015,Silvy van Kuijk,AV27419,Avistaje,UNK,7:38:00,7,Vocalizing
+OS20942,1/30/2015,Silvy van Kuijk,AV27420,Avistaje,UNK,7:43:00,7,Vocalizing
+OS20942,1/30/2015,Silvy van Kuijk,AV27422,Avistaje,UNK,9:53:00,9,Vocalizing
+OS20947,2/4/2015,Silvy van Kuijk,AV27429,Avistaje,UNK,7:02:45,7,Vocalizing
+OS20947,2/4/2015,Silvy van Kuijk,AV27430,Avistaje,UNK,7:48:49,7,Vocalizing
+OS20947,2/4/2015,Silvy van Kuijk,AV27431,Avistaje,UNK,8:21:51,8,Vocalizing
+OS20947,2/4/2015,Silvy van Kuijk,AV27428,AdLib,Kong/,13:09:00,13,VWH/VDU/
+OS20952,2/9/2015,Silvy van Kuijk,AV27472,Avistaje,UNK,9:12:00,9,Vocalizing
+OS20952,2/9/2015,Silvy van Kuijk,AV27475,Avistaje,UNK,9:25:00,9,Vocalizing
+OS20953,2/10/2015,Silvy van Kuijk,AV27437,Avistaje,UNK,7:11:00,7,Vocalizing
+OS20954,2/11/2015,Silvy van Kuijk,AV27441,Avistaje,UNK,14:45:00,14,Vocalizing
+OS20954,2/11/2015,Silvy van Kuijk,AV27442,Avistaje,Callicebus K,15:42:03,15,Vocalizing
+OS20954,2/11/2015,Silvy van Kuijk,AV27443,Avistaje,UNK,15:45:22,15,Vocalizing
+OS20960,2/17/2015,Silvy van Kuijk,AV27455,Avistaje,UNK,6:25:53,6,Vocalizing
+OS20960,2/17/2015,Silvy van Kuijk,AV27456,Avistaje,Callicebus K,6:29:00,6,Vocalizing
+OS20960,2/17/2015,Silvy van Kuijk,AV27457,Avistaje,UNK,6:30:00,6,Vocalizing
+OS20960,2/17/2015,Silvy van Kuijk,AV27458,Avistaje,UNK,6:34:00,6,Vocalizing
+OS20961,2/18/2015,Silvy van Kuijk,AV27448,Avistaje,Callicebus K,6:51:00,6,Vocalizing
+OS20961,2/18/2015,Silvy van Kuijk,AV27461,Avistaje,UNK,6:52:15,6,Vocalizing
+OS20961,2/18/2015,Silvy van Kuijk,AV27462,Avistaje,UNK,6:57:11,6,Vocalizing
+OS20962,2/19/2015,Silvy van Kuijk,AV27463,Avistaje,Callicebus L,6:15:00,6,Vocalizing
+OS20962,2/19/2015,Silvy van Kuijk,AV27450,AdLib,Kong/,6:27:00,6,VDU/
+OS20962,2/19/2015,Silvy van Kuijk,AV27464,Avistaje,UNK,6:33:00,6,Vocalizing
+OS20962,2/19/2015,Silvy van Kuijk,AV27465,Avistaje,Callicebus B,6:34:00,6,Vocalizing
+OS20962,2/19/2015,Silvy van Kuijk,AV27450,AdLib,Kong/,6:41:00,6,VDU/
+OS20964,2/21/2015,Silvy van Kuijk,AV27466,Avistaje,Callicebus B,7:15:00,7,Vocalizing
+OS20964,2/21/2015,Silvy van Kuijk,AV27467,Avistaje,UNK,8:22:00,8,Vocalizing
+OS20975,3/4/2015,Silvy van Kuijk,AV27478,Avistaje,Callicebus K,7:25:00,7,Vocalizing
+OS20976,3/5/2015,Silvy van Kuijk,AV27514,Avistaje,Callicebus L,8:28:00,8,Vocalizing
+OS20976,3/5/2015,Silvy van Kuijk,AV27515,Avistaje,Callicebus B,8:30:00,8,Vocalizing
+OS20976,3/5/2015,Silvy van Kuijk,AV27480,AdLib,Kong/Katta/,8:35:00,8,VDU/
+OS20977,3/6/2015,Silvy van Kuijk,AV27484,Avistaje,UNK,7:29:00,7,Vocalizing
+OS20980,3/9/2015,Silvy van Kuijk,AV27494,Avistaje,UNK,13:13:00,13,Vocalizing
+OS20981,3/10/2015,Silvy van Kuijk,AV27495,Avistaje,UNK,8:00:00,8,Vocalizing
+OS20981,3/10/2015,Silvy van Kuijk,AV27495,AdLib,UNKNOWN/,8:00:05,8,VDU/
+OS20981,3/10/2015,Silvy van Kuijk,AV27496,Avistaje,UNK,8:03:00,8,Vocalizing
+OS20981,3/10/2015,Silvy van Kuijk,AV27497,Avistaje,UNK,8:10:00,8,Vocalizing
+OS20981,3/10/2015,Silvy van Kuijk,AV27492,AdLib,Luciferus/Lulu/,8:14:00,8,VDU/
+OS20986,3/15/2015,Silvy van Kuijk,AV27502,Avistaje,UNK,7:28:31,7,Vocalizing
+OS20986,3/15/2015,Silvy van Kuijk,AV27503,Avistaje,UNK,7:29:52,7,Vocalizing
+OS20986,3/15/2015,Silvy van Kuijk,AV27504,Avistaje,Callicebus B,7:32:00,7,Vocalizing
+OS20986,3/15/2015,Silvy van Kuijk,AV27505,Avistaje,Callicebus K,7:38:00,7,Vocalizing
+OS20990,3/18/2015,Silvy van Kuijk,AV27508,Avistaje,Callicebus B,6:33:00,6,Vocalizing
+OS20990,3/18/2015,Silvy van Kuijk,AV27506,Avistaje,Callicebus K,6:40:00,6,Vocalizing
+OS20996,3/31/2015,Silvy van Kuijk,AV27513,Avistaje,UNK,7:40:00,7,Vocalizing
+OS21001,4/5/2015,Silvy van Kuijk,AV27518,Avistaje,UNK,6:38:02,6,Vocalizing
+OS21001,4/5/2015,Silvy van Kuijk,AV27519,AdLib,Kong/,6:44:00,6,VDU/
+OS21001,4/5/2015,Silvy van Kuijk,AV27519,Avistaje,Callicebus K,6:44:48,6,Vocalizing
+OS21001,4/5/2015,Silvy van Kuijk,AV27533,Avistaje,UNK,6:51:00,6,Vocalizing
+OS21001,4/5/2015,Silvy van Kuijk,AV27540,Avistaje,UNK,7:07:00,7,Vocalizing
+OS21001,4/5/2015,Silvy van Kuijk,AV27541,Avistaje,UNK,7:09:00,7,Vocalizing
+OS21001,4/5/2015,Silvy van Kuijk,AV27542,Avistaje,UNK,7:12:00,7,Vocalizing
+OS21001,4/5/2015,Silvy van Kuijk,AV27519,AdLib,Kong/,7:13:00,7,VDU/
+OS21001,4/5/2015,Silvy van Kuijk,AV27519,AdLib,Kong/,7:21:00,7,VDU/
+OS21003,4/7/2015,Silvy van Kuijk,AV27523,Avistaje,UNK,7:29:17,7,Vocalizing
+OS21003,4/7/2015,Silvy van Kuijk,AV27525,Avistaje,UNK,9:17:00,9,Vocalizing
+OS21003,4/7/2015,Silvy van Kuijk,AV27526,Avistaje,UNK,9:17:00,9,Vocalizing
+OS21003,4/7/2015,Silvy van Kuijk,AV27527,Avistaje,UNK,9:27:00,9,Vocalizing
+OS21003,4/7/2015,Silvy van Kuijk,AV27528,Avistaje,UNK,10:04:17,10,Vocalizing
+OS21008,4/12/2015,Silvy van Kuijk,AV27560,Avistaje,UNK,5:21:00,5,Vocalizing
+OS21013,4/17/2015,Silvy van Kuijk,AV27563,Avistaje,UNK,10:09:00,10,Vocalizing
+OS21013,4/17/2015,Silvy van Kuijk,AV27558,Avistaje,Callicebus B,10:16:00,10,Vocalizing
+OS21013,4/17/2015,Silvy van Kuijk,AV27544,Avistaje,UNK,15:33:24,15,Vocalizing
+OS21018,4/22/2015,Silvy van Kuijk,AV27564,Avistaje,Callicebus B,6:46:00,6,Vocalizing
+OS21018,4/22/2015,Silvy van Kuijk,AV27551,AdLib,Kong/,6:48:00,6,VDU/
+OS21018,4/22/2015,Silvy van Kuijk,AV27551,AdLib,Kong/,6:54:00,6,VDU/
+OS21018,4/22/2015,Silvy van Kuijk,AV27552,Avistaje,Callicebus K,13:54:00,13,Vocalizing
+OS21019,4/23/2015,Silvy van Kuijk,AV27565,Avistaje,UNK,6:37:00,6,Vocalizing
+OS21019,4/23/2015,Silvy van Kuijk,AV27556,Avistaje,Callicebus B,8:27:00,8,Vocalizing
+OS21019,4/23/2015,Silvy van Kuijk,AV27555,AdLib,Kong/,8:27:00,8,VDU/
+OS21019,4/23/2015,Silvy van Kuijk,AV27555,AdLib,Kong/,8:30:00,8,VDU/
+OS21019,4/23/2015,Silvy van Kuijk,AV27566,Avistaje,UNK,8:32:00,8,Vocalizing
+OS21023,4/27/2015,Silvy van Kuijk,AV27561,Avistaje,Callicebus B,6:34:00,6,Vocalizing
+OS21029,5/3/2015,Silvy van Kuijk,AV27571,Avistaje,Callicebus K,5:43:00,5,Vocalizing
+OS21031,5/5/2015,Silvy van Kuijk,AV27580,Avistaje,Callicebus K,5:53:00,5,Vocalizing
+OS21031,5/5/2015,Silvy van Kuijk,AV27580,AdLib,Kong/,6:03:00,6,VBG/VDU/
+OS21031,5/5/2015,Silvy van Kuijk,AV27581,Avistaje,Callicebus B,6:07:00,6,Vocalizing
+OS21034,5/8/2015,Silvy van Kuijk,AV27590,Avistaje,Callicebus K,7:18:00,7,Vocalizing
+OS21034,5/8/2015,Silvy van Kuijk,AV27591,Avistaje,UNK,7:21:00,7,Vocalizing
+OS21034,5/8/2015,Silvy van Kuijk,AV27592,Avistaje,UNK,7:27:00,7,Vocalizing
+OS21034,5/8/2015,Silvy van Kuijk,AV27593,Avistaje,UNK,7:28:00,7,Vocalizing
+OS21034,5/8/2015,Silvy van Kuijk,AV27594,Avistaje,UNK,7:32:00,7,Vocalizing
+OS21034,5/8/2015,Silvy van Kuijk,AV27584,AdLib,Bongo/,7:47:00,7,VDU/
+OS21042,5/16/2015,Silvy van Kuijk,AV27615,Avistaje,Callicebus K,8:05:00,8,Vocalizing
+OS21042,5/16/2015,Silvy van Kuijk,AV27617,Avistaje,Callicebus B,8:05:00,8,Vocalizing
+OS21042,5/16/2015,Silvy van Kuijk,AV27616,Avistaje,UNK,8:25:00,8,Vocalizing
+OS21046,5/20/2015,Silvy van Kuijk,AV27614,Avistaje,UNK,9:49:00,9,Vocalizing
+OS21050,5/24/2015,Silvy van Kuijk,AV27619,AdLib,Kong/,7:53:00,7,OU/VDU/OU/
+OS21050,5/24/2015,Silvy van Kuijk,AV27620,Avistaje,UNK,9:16:00,9,Vocalizing
+OS21050,5/24/2015,Silvy van Kuijk,AV27622,Avistaje,Callicebus K,9:27:00,9,Vocalizing
+OS21051,5/25/2015,Silvy van Kuijk,AV27628,Avistaje,UNK,8:34:00,8,Vocalizing
+OS21054,5/28/2015,Silvy van Kuijk,AV27631,Avistaje,UNK,9:44:00,9,Vocalizing
+OS21055,5/29/2015,Silvy van Kuijk,AV27657,Avistaje,UNK,10:10:00,10,Vocalizing
+OS21055,5/29/2015,Silvy van Kuijk,AV27656,Avistaje,UNK,14:23:00,14,Vocalizing
+OS21058,6/1/2015,Silvy van Kuijk,AV27647,AdLib,UNKNOWN/,13:53:00,13,DU/
+OS21058,6/1/2015,Silvy van Kuijk,AV27647,Avistaje,Callicebus K,13:56:00,13,Vocalizing
+OS21064,6/7/2015,Silvy van Kuijk,AV27693,Avistaje,Callicebus B,6:49:00,6,Vocalizing
+OS21064,6/7/2015,Silvy van Kuijk,AV27692,Avistaje,Callicebus K,6:50:00,6,Vocalizing
+OS21064,6/7/2015,Silvy van Kuijk,AV27663,AdLib,Bongo/,7:04:00,7,VDU/TL/
+OS21068,6/11/2015,Silvy van Kuijk,AV27701,Avistaje,UNK,15:47:00,15,Vocalizing
+OS21069,6/12/2015,Silvy van Kuijk,AV27680,Avistaje,UNK,7:58:00,7,Vocalizing
+OS21069,6/12/2015,Silvy van Kuijk,AV27681,Avistaje,UNK,8:11:00,8,Vocalizing
+OS21069,6/12/2015,Silvy van Kuijk,AV27676,AdLib,Bongo/,8:13:00,8,VDU/TL/
+OS21069,6/12/2015,Silvy van Kuijk,AV27689,Avistaje,UNK,9:02:00,9,Vocalizing
+OS21072,6/15/2015,Silvy van Kuijk,AV27723,Avistaje,Callicebus K,6:11:00,6,Vocalizing
+OS21072,6/15/2015,Silvy van Kuijk,AV27715,Avistaje,UNK,7:04:00,7,Vocalizing
+OS21074,6/17/2015,Silvy van Kuijk,AV27721,Avistaje,UNK,14:02:00,14,Vocalizing
+OS21077,6/20/2015,Silvy van Kuijk,AV27704,Avistaje,UNK,9:31:00,9,Vocalizing
+OS21078,6/21/2015,Silvy van Kuijk,AV27708,Avistaje,UNK,7:48:00,7,Vocalizing
+OS21088,6/10/2016,Silvy van Kuijk,AV27733,Avistaje,UNK,6:21:00,6,Vocalizing
+OS21088,6/10/2016,Silvy van Kuijk,AV27727,AdLib,Luciferus/,6:39:00,6,VDU/
+OS21090,6/12/2016,Silvy van Kuijk,AV27748,Avistaje,UNK,7:35:00,7,Vocalizing
+OS21091,6/13/2016,Silvy van Kuijk,AV27749,Avistaje,Callicebus K,13:32:00,13,Vocalizing
+OS21091,6/13/2016,Silvy van Kuijk,AV27750,Avistaje,UNK,13:38:00,13,Vocalizing
+OS21091,6/13/2016,Silvy van Kuijk,AV27751,Avistaje,UNK,13:40:00,13,Vocalizing
+OS21092,6/14/2016,Silvy van Kuijk,AV27752,Avistaje,UNK,6:17:00,6,Vocalizing
+OS21092,6/14/2016,Silvy van Kuijk,AV27739,Avistaje,UNK,7:43:00,7,Vocalizing
+OS21092,6/14/2016,Silvy van Kuijk,AV27738,AdLib,Luciferus/,9:21:00,9,VDU/
+OS21092,6/14/2016,Silvy van Kuijk,AV27738,AdLib,Luciferus/,9:34:00,9,VDU/
+OS21099,6/21/2016,Silvy van Kuijk,AV27765,Avistaje,UNK,9:59:00,9,Vocalizing
+OS21099,6/21/2016,Silvy van Kuijk,AV27769,Avistaje,UNK,10:11:00,10,Vocalizing
+OS21099,6/21/2016,Silvy van Kuijk,AV27764,AdLib,Luciferus/,10:14:00,10,VDU/
+OS21099,6/21/2016,Silvy van Kuijk,AV27770,Avistaje,UNK,13:31:00,13,Vocalizing
+OS91607,1/13/2016,Valeria Pardo,AV31493,Avistaje,UNK,9:20:52,9,Vocalizing
+OS91608,1/14/2016,Valeria Pardo,AV31499,Avistaje,UNK,13:22:11,13,Vocalizing
+OS91615,1/21/2016,Valeria Pardo,AV31525,Avistaje,UNK,6:22:00,6,Vocalizing
+OS91615,1/21/2016,Valeria Pardo,AV31526,Avistaje,UNK,10:55:26,10,Vocalizing
+OS91619,1/25/2016,Valeria Pardo,AV31536,Avistaje,UNK,6:43:58,6,Vocalizing
+OS91621,1/27/2016,Valeria Pardo,AV31543,Avistaje,UNK,6:38:28,6,Vocalizing
+OS91621,1/27/2016,Valeria Pardo,AV31544,Avistaje,UNK,6:54:58,6,Vocalizing
+OS91621,1/27/2016,Valeria Pardo,AV31547,Avistaje,UNK,7:44:25,7,Vocalizing
+OS91622,1/28/2016,Valeria Pardo,AV31550,Avistaje,UNK,6:56:45,6,Vocalizing
+OS91622,1/28/2016,Valeria Pardo,AV31556,Avistaje,UNK,9:27:34,9,Vocalizing
+OS91625,1/31/2016,Valeria Pardo,AV31558,Avistaje,UNK,6:30:00,6,Vocalizing
+OS91625,1/31/2016,Valeria Pardo,AV31559,Avistaje,Callicebus L,6:58:41,6,Vocalizing
+OS91626,2/1/2016,Valeria Pardo,AV31564,Avistaje,UNK,6:29:26,6,Vocalizing
+OS91626,2/1/2016,Valeria Pardo,AV31567,Avistaje,Callicebus B,7:32:42,7,Vocalizing
+OS91626,2/1/2016,Valeria Pardo,AV31569,Avistaje,UNK,9:40:41,9,Vocalizing
+OS91627,2/2/2016,Valeria Pardo,AV31572,Avistaje,UNK,6:18:51,6,Vocalizing
+OS91627,2/2/2016,Valeria Pardo,AV31574,Avistaje,UNK,7:01:19,7,Vocalizing
+OS91627,2/2/2016,Valeria Pardo,AV31575,Avistaje,Callicebus L,7:05:40,7,Vocalizing
+OS91632,2/7/2016,Valeria Pardo,AV31588,Avistaje,UNK,8:43:27,8,Vocalizing
+OS91636,2/11/2016,Valeria Pardo,AV31606,Avistaje,UNK,7:24:57,7,Vocalizing
+OS91636,2/11/2016,Valeria Pardo,AV31607,Avistaje,UNK,7:28:07,7,Vocalizing
+OS91636,2/11/2016,Valeria Pardo,AV31609,Avistaje,UNK,8:02:15,8,Vocalizing
+OS91637,2/12/2016,Valeria Pardo,AV31617,Avistaje,UNK,11:39:09,11,Vocalizing
+OS91637,2/12/2016,Valeria Pardo,AV31618,Avistaje,UNK,12:52:59,12,Vocalizing
+OS91639,2/14/2016,Valeria Pardo,AV31620,Avistaje,UNK,6:25:01,6,Vocalizing
+OS91639,2/14/2016,Valeria Pardo,AV31622,Avistaje,UNK,6:55:24,6,Vocalizing
+OS91639,2/14/2016,Valeria Pardo,AV31625,Avistaje,UNK,7:55:05,7,Vocalizing
+OS91640,2/15/2016,Valeria Pardo,AV31631,Avistaje,UNK,7:14:46,7,Vocalizing
+OS91641,2/16/2016,Valeria Pardo,AV31634,Avistaje,UNK,9:46:06,9,Vocalizing
+OS91641,2/16/2016,Valeria Pardo,AV31635,Avistaje,UNK,9:48:39,9,Vocalizing
+OS91645,2/20/2016,Valeria Pardo,AV31645,Avistaje,UNK,6:44:51,6,Vocalizing
+OS91650,2/28/2016,Valeria Pardo,AV31652,Avistaje,Callicebus K,6:03:58,6,Vocalizing
+OS91650,2/28/2016,Valeria Pardo,AV31653,Avistaje,UNK,6:14:38,6,Vocalizing
+OS91650,2/28/2016,Valeria Pardo,AV31656,Avistaje,UNK,16:19:36,16,Vocalizing
+OS91651,2/29/2016,Valeria Pardo,AV31657,Avistaje,Callicebus K,6:37:00,6,Vocalizing
+OS91651,2/29/2016,Valeria Pardo,AV31658,Avistaje,Callicebus B,6:38:00,6,Vocalizing
+OS91651,2/29/2016,Valeria Pardo,AV31659,Avistaje,Callicebus L,6:44:24,6,Vocalizing
+OS91652,3/1/2016,Valeria Pardo,AV31663,Avistaje,UNK,6:06:59,6,Vocalizing
+OS91652,3/1/2016,Valeria Pardo,AV31664,Avistaje,UNK,6:09:15,6,Vocalizing
+OS91655,3/4/2016,Valeria Pardo,AV31672,Avistaje,Callicebus B,5:57:19,5,Vocalizing
+OS91657,3/6/2016,Valeria Pardo,AV31676,Avistaje,Callicebus B,6:06:26,6,Vocalizing
+OS91657,3/6/2016,Valeria Pardo,AV31677,Avistaje,UNK,6:14:41,6,Vocalizing
+OS91657,3/6/2016,Valeria Pardo,AV31678,Avistaje,Callicebus L,6:17:10,6,Vocalizing
+OS91660,3/9/2016,Valeria Pardo,AV31681,Avistaje,Callicebus K,5:56:42,5,Vocalizing
+OS91661,3/10/2016,Valeria Pardo,AV31689,Avistaje,UNK,7:01:30,7,Vocalizing
+OS91661,3/10/2016,Valeria Pardo,AV31690,Avistaje,Group,7:03:24,7,Vocalizing
+OS91661,3/10/2016,Valeria Pardo,AV31693,Avistaje,Group,8:35:36,8,Vocalizing
+OS91663,3/12/2016,Valeria Pardo,AV31698,Avistaje,UNK,6:36:06,6,Vocalizing
+OS91663,3/12/2016,Valeria Pardo,AV31699,Avistaje,UNK,6:53:19,6,Vocalizing
+OS91666,3/15/2016,Valeria Pardo,AV31715,Avistaje,Callicebus K,7:01:31,7,Vocalizing
+OS91667,3/16/2016,Valeria Pardo,AV31722,Avistaje,Callicebus B,6:20:55,6,Vocalizing
+OS91667,3/16/2016,Valeria Pardo,AV31723,Avistaje,Callicebus K,6:23:19,6,Vocalizing
+OS91667,3/16/2016,Valeria Pardo,AV31724,Avistaje,UNK,10:28:51,10,Vocalizing
+OS91667,3/16/2016,Valeria Pardo,AV31725,Avistaje,UNK,10:37:18,10,Vocalizing
+OS91667,3/16/2016,Valeria Pardo,AV31722,AdLib,Bongo/B-Adult Female/,16:55:31,16,VDU/
+OS91670,3/19/2016,Valeria Pardo,AV31727,Avistaje,UNK,6:01:48,6,Vocalizing
+OS91670,3/19/2016,Valeria Pardo,AV31729,Avistaje,UNK,6:18:22,6,Vocalizing
+OS91671,3/20/2016,Valeria Pardo,AV31734,Avistaje,UNK,6:06:55,6,Vocalizing
+OS91673,3/22/2016,Valeria Pardo,AV31742,Avistaje,Callicebus K,6:18:01,6,Vocalizing
+OS91673,3/22/2016,Valeria Pardo,AV31744,Avistaje,Callicebus L,6:26:00,6,Vocalizing
+OS91673,3/22/2016,Valeria Pardo,AV31743,Avistaje,Callicebus B,6:27:05,6,Vocalizing
+OS91673,3/22/2016,Valeria Pardo,AV31746,Avistaje,UNK,7:01:17,7,Vocalizing
+OS91674,3/23/2016,Valeria Pardo,AV31748,Avistaje,UNK,13:30:10,13,Vocalizing
+OS91678,3/27/2016,Valeria Pardo,AV31757,Avistaje,UNK,8:34:45,8,Vocalizing
+OS91678,3/27/2016,Valeria Pardo,AV31758,Avistaje,UNK,8:34:49,8,Vocalizing
+OS91679,3/28/2016,Valeria Pardo,AV31762,Avistaje,UNK,5:54:04,5,Vocalizing
+OS91679,3/28/2016,Valeria Pardo,AV31764,Avistaje,UNK,5:56:13,5,Vocalizing
+OS91679,3/28/2016,Valeria Pardo,AV31765,Avistaje,UNK,6:08:02,6,Vocalizing
+OS91679,3/28/2016,Valeria Pardo,AV31767,Avistaje,UNK,7:00:57,7,Vocalizing
+OS91679,3/28/2016,Valeria Pardo,AV31768,Avistaje,UNK,7:01:48,7,Vocalizing
+OS91680,3/29/2016,Valeria Pardo,AV31774,Avistaje,UNK,7:59:07,7,Vocalizing
+OS91680,3/29/2016,Valeria Pardo,AV31775,Avistaje,UNK,8:03:11,8,Vocalizing
+OS91683,4/1/2016,Valeria Pardo,AV31785,Avistaje,UNK,7:04:03,7,Vocalizing
+OS91686,4/13/2016,Valeria Pardo,AV31790,Avistaje,UNK,6:57:53,6,Vocalizing
+OS91687,4/14/2016,Valeria Pardo,AV31792,AdLib,Lulu/Luciferus/,7:31:00,7,VDU/
+OS91687,4/14/2016,Valeria Pardo,AV31794,Avistaje,Callicebus B,7:34:32,7,Vocalizing
+OS91691,4/18/2016,Valeria Pardo,AV28068,Avistaje,UNK,8:00:30,8,Vocalizing
+OS91695,4/22/2016,Valeria Pardo,AV28078,Avistaje,Callicebus B,8:40:21,8,Vocalizing
+OS91695,4/22/2016,Valeria Pardo,AV28083,Avistaje,Callicebus L,8:55:00,8,Vocalizing
+OS91695,4/22/2016,Valeria Pardo,AV28078,AdLib,Luciferus/Lulu/L-INF14A/,8:59:38,8,VDU/
+OS91695,4/22/2016,Valeria Pardo,AV28078,AdLib,Bongo/B-Adult Female/,9:03:14,9,VDU/
+OS91695,4/22/2016,Valeria Pardo,AV28078,AdLib,Luciferus/Lulu/,9:04:36,9,VDU/
+OS91695,4/22/2016,Valeria Pardo,AV28080,Avistaje,Callicebus L,10:17:00,10,Vocalizing
+OS91695,4/22/2016,Valeria Pardo,AV28078,AdLib,Bongo/B-Adult Female/,10:20:04,10,VDU/
+OS91696,4/23/2016,Valeria Pardo,AV28085,Avistaje,Callicebus B,6:32:03,6,Vocalizing
+OS91704,5/1/2016,Valeria Pardo,AV28099,Avistaje,UNK,6:17:26,6,Vocalizing
+OS91714,5/11/2016,Valeria Pardo,AV28138,Avistaje,UNK,5:49:15,5,Vocalizing
+OS91714,5/11/2016,Valeria Pardo,AV28139,Avistaje,UNK,6:03:57,6,Vocalizing
+OS91714,5/11/2016,Valeria Pardo,AV28141,Avistaje,UNK,6:57:24,6,Vocalizing
+OS91714,5/11/2016,Valeria Pardo,AV28143,Avistaje,UNK,10:37:02,10,Vocalizing
+OS91715,5/12/2016,Valeria Pardo,AV28145,Avistaje,UNK,7:10:40,7,Vocalizing
+OS91715,5/12/2016,Valeria Pardo,AV28147,Avistaje,UNK,9:14:54,9,Vocalizing
+OS91715,5/12/2016,Valeria Pardo,AV28148,Avistaje,UNK,11:31:30,11,Vocalizing
+OS91718,5/15/2016,Valeria Pardo,AV28150,Avistaje,Callicebus K,8:36:46,8,Vocalizing
+OS91719,5/16/2016,Valeria Pardo,AV28153,Avistaje,Callicebus K,7:06:32,7,Vocalizing
+OS91726,5/23/2016,Valeria Pardo,AV28170,Avistaje,UNK,6:07:34,6,Vocalizing
+OS91729,5/26/2016,Valeria Pardo,AV28177,Avistaje,Callicebus B,6:08:06,6,Vocalizing
+OS91729,5/26/2016,Valeria Pardo,AV28177,AdLib,Bongo/B-Adult Female/,6:24:32,6,VDU/DU/BG/BG/BG/
+OS91729,5/26/2016,Valeria Pardo,AV28179,Avistaje,Callicebus K,6:45:51,6,Vocalizing
+OS91729,5/26/2016,Valeria Pardo,AV28181,Avistaje,UNK,8:01:54,8,Vocalizing
+OS91729,5/26/2016,Valeria Pardo,AV28191,Avistaje,Callicebus L,8:05:00,8,Vocalizing
+OS91729,5/26/2016,Valeria Pardo,AV28177,AdLib,B-Adult Female/Bongo/,8:09:00,8,VDU/
+OS91729,5/26/2016,Valeria Pardo,AV28177,AdLib,B-Adult Female/Bongo/,8:32:00,8,VDU/
+OS91729,5/26/2016,Valeria Pardo,AV28177,AdLib,Bongo/B-Adult Female/,9:17:00,9,VDU/OU/OU/
+OS91729,5/26/2016,Valeria Pardo,AV28177,AdLib,Bongo/B-Adult Female/,10:13:00,10,VDU/OU/
+OS91729,5/26/2016,Valeria Pardo,AV28177,AdLib,Bongo/B-Adult Female/,10:54:00,10,VDU/OU/
+OS91729,5/26/2016,Valeria Pardo,AV28184,Avistaje,UNK,12:26:53,12,Vocalizing
+OS91729,5/26/2016,Valeria Pardo,AV28177,AdLib,Bongo/B-Adult Female/,14:30:36,14,VDU/
+OS91730,5/27/2016,Valeria Pardo,AV28194,Avistaje,Callicebus L,6:06:36,6,Vocalizing
+OS91730,5/27/2016,Valeria Pardo,AV28195,Avistaje,UNK,6:46:15,6,Vocalizing
+OS91730,5/27/2016,Valeria Pardo,AV28196,Avistaje,UNK,7:11:03,7,Vocalizing
+OS91730,5/27/2016,Valeria Pardo,AV28197,Avistaje,Callicebus L,7:26:25,7,Vocalizing
+OS91730,5/27/2016,Valeria Pardo,AV28198,Avistaje,Callicebus K,7:28:00,7,Vocalizing
+OS91730,5/27/2016,Valeria Pardo,AV28200,Avistaje,Callicebus B,7:48:18,7,Vocalizing
+OS91730,5/27/2016,Valeria Pardo,AV28200,AdLib,Bongo/B-Adult Female/,7:49:00,7,VDU/
+OS91731,5/28/2016,Valeria Pardo,AV28203,Avistaje,UNK,9:34:55,9,Vocalizing
+OS91731,5/28/2016,Valeria Pardo,AV28204,Avistaje,Callicebus B,9:38:15,9,Vocalizing
+OS91731,5/28/2016,Valeria Pardo,AV28205,Avistaje,Callicebus L,9:39:32,9,Vocalizing
+OS91731,5/28/2016,Valeria Pardo,AV28206,Avistaje,Callicebus K,9:40:12,9,Vocalizing
+OS91731,5/28/2016,Valeria Pardo,AV28204,AdLib,Bongo/B-Adult Female/,9:42:27,9,VDU/OU/
+OS91731,5/28/2016,Valeria Pardo,AV28204,AdLib,Bongo/B-Adult Female/,9:48:07,9,VDU/
+OS91731,5/28/2016,Valeria Pardo,AV28208,Avistaje,Callicebus L,10:40:55,10,Vocalizing
+OS91731,5/28/2016,Valeria Pardo,AV28213,Avistaje,Callicebus K,16:15:32,16,Vocalizing
+OS91746,6/12/2016,Valeria Pardo,AV28255,Avistaje,UNK,5:54:46,5,Vocalizing
+OS91746,6/12/2016,Valeria Pardo,AV28256,Avistaje,UNK,6:01:35,6,Vocalizing
+OS91751,6/17/2016,Valeria Pardo,AV28281,Avistaje,UNK,11:03:38,11,Vocalizing
+OS91752,6/18/2016,Valeria Pardo,AV28288,Avistaje,UNK,12:34:13,12,Vocalizing
+OS91755,6/21/2016,Valeria Pardo,AV28296,Avistaje,UNK,10:08:11,10,Vocalizing
+OS91755,6/21/2016,Valeria Pardo,AV28297,Avistaje,UNK,10:08:14,10,Vocalizing
+OS91755,6/21/2016,Valeria Pardo,AV28298,Avistaje,Callicebus B,10:08:37,10,Vocalizing
