@@ -10,7 +10,7 @@ The ***Scripts*** directory contains four R-scripts related to different analyse
 - **Script 1**: Contains code related to determining the temporal distrubution, source level and attenuation of duets.
 - **Script 2**: Contains code related to calculating the detection radius and detection distance of duets.
 - **Script 3**: Contains code using an automated detection tool from the R-package *monitoR* , written by Jon Katz and Sasha Hafner and published in Katz et al. (2016), for automated detection of titi duets in audio files.
-- **Script 4**: This script is a modified version of the PAMGuide script written by Nathan Merchant, published in Merchant et al. (2015). The primary modifications made are... Please refer to [Appendix S1](https://besjournals-onlinelibrary-wiley-com.ezproxy.lib.utexas.edu/action/downloadSupplement?doi=10.1111%2F2041-210X.12330&file=mee312330-sup-0001-AppendixS1.pdf) in the Merchant et al. (2015) paper for detailed instructions on how to use the package.
+- **Script 4**: This script is a modified version of the PAMGuide script written by Nathan D. Merchant, published in Merchant et al. (2015). The primary modifications made are noted in the header of the file. Please refer to [Appendix S1](https://besjournals-onlinelibrary-wiley-com.ezproxy.lib.utexas.edu/action/downloadSupplement?doi=10.1111%2F2041-210X.12330&file=mee312330-sup-0001-AppendixS1.pdf) in the Merchant et al. (2015) paper for detailed instructions on how to use the package.
 
 
 ## ***Data*** Directory
