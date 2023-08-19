@@ -2,7 +2,7 @@
 
 
 ## Introduction
-This repository contains data and code related to the analyses presented in <a href="https://www.frontiersin.org/articles/10.3389/fevo.2023.1173722/abstract">Automated detection and detection range of primate duets: a case study of the red titi monkey (*Plecturocebus discolor*) using passice acoustic monitoring
+This repository contains data and code related to the analyses presented in <a href="https://www.frontiersin.org/articles/10.3389/fevo.2023.1173722/abstract">Automated detection and detection range of primate duets: A case study of the red titi monkey (*Plecturocebus discolor*) using passive acoustic monitoring
 </a>.
 
 ## ***Scripts*** Directory
