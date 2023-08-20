@@ -5,8 +5,8 @@
 This repository contains data and code related to the analyses presented in <a href="https://www.frontiersin.org/articles/10.3389/fevo.2023.1173722/abstract">Automated detection and detection range of primate duets: A case study of the red titi monkey (*Plecturocebus discolor*) using passive acoustic monitoring
 </a>.
 
-## ***Scripts*** Directory
-The ***Scripts*** directory contains four R-scripts related to different analyses:
+## ***Scripts*** 
+The main directory contains four R-scripts related to different analyses:
 - **Script 1**: Contains code related to determining the temporal distrubution, source level and attenuation of duets.
 - **Script 2**: Contains code related to calculating the detection radius and detection distance of duets.
 - **Script 3**: Contains code using an automated detection tool from the R-package *monitoR* , written by Jon Katz and Sasha Hafner and published in Katz et al. (2016), for automated detection of titi duets in audio files.
