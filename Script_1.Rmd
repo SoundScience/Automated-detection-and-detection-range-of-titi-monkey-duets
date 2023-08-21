@@ -1,0 +1,300 @@
+---
+title: 'Script 1: Temporal distribution, source level and attenuation of duets'
+authors: "Silvy van Kuijk & Tony Di Fiore"
+date: "8/16/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Step 1: Install Dependencies
+This script was written in R version 4.1.2.
+```{r, include = FALSE}
+# Package names
+packages <- c("tidyverse", # For data wrangling, also loads in lubridate, dplyr, ggplot2.
+              "seewave", # For creating spectrograms, also loads in tuneR. 
+              "ggpubr") # To create vector of packages
+
+# Install packages not yet installed
+installed_packages <- packages %in% rownames(installed.packages())
+if (any(installed_packages == FALSE)) {
+  install.packages(packages[!installed_packages])
+}
+
+# Load packages
+lapply(packages, require, character.only = TRUE)    # Load multiple packages
+```
+
+# Step 2: Load Datasets
+```{r, include = FALSE}
+# Step 3 data
+oa <- read_csv("Data/Observer_Activity_Script1.csv", col_names = TRUE)
+duets <- read_csv("Data/Duets_Script1.csv", col_names = TRUE)
+
+# Step 4 data
+homerange <- read_csv("Data/Homerange_Data_Script1.csv", col_names = TRUE)
+source("Scripts/Script 4.R") 
+```
+
+# Step 3: Temporal Distribution of Titi Duets
+
+If possible, recording schedules for PAM should be tailored to the characteristics of your species' vocal activity such as the temporal pattern (both time of day and seasonal trends if known). Here, we determine the temporal pattern of titi duets.
+
+```{r}
+# Parse date and time input vectors into POSIXct date-time objects.
+oa$Date <- parse_date_time2(oa$Date, orders = c("mdY", "mdy"), tz = "America/Bogota")
+
+oa$DatetimeStart <- make_datetime(year(oa$Date),
+                                  month(oa$Date),
+                                  day(oa$Date),
+                                  hour(oa$Time_Start), 
+                                  minute(oa$Time_Start), 
+                                  second(oa$Time_Start), 
+                                  tz = "America/Bogota")
+
+oa$DatetimeEnd <- make_datetime(year(oa$Date),
+                                month(oa$Date),
+                                day(oa$Date),
+                                hour(oa$Time_End), 
+                                minute(oa$Time_End), 
+                                second(oa$Time_End),
+                                tz = "America/Bogota")
+
+duets$Date <- parse_date_time2(duets$Date, 
+                               orders = c("mdY", "mdy"), 
+                               tz = "America/Bogota")
+
+duets$DateStartTime <- make_datetime(year(duets$Date),
+                                     month(duets$Date),
+                                     day(duets$Date),
+                                     hour(duets$start_time), 
+                                     minute(duets$start_time), 
+                                     second(duets$start_time), 
+                                     tz = "America/Bogota")
+```
+
+The duet data could include duets that were recorded while observers were not conducting field work. These duet records will need to be removed first.
+```{r}
+oa$Duration <- oa$DatetimeEnd - oa$DatetimeStart # Calculate duration of field work in seconds
+oa$Interval <- interval(oa$DatetimeStart,oa$DatetimeEnd) # Create an interval variable
+
+# Winnow down duets to just those occurring within observer activity field times
+original_duet_variables <- names(duets)
+left_join(duets, oa, by = c("ObsSampleID"), relationship = "many-to-many") %>%
+  mutate(keep = if_else(DateStartTime %within% Interval, "y","n")) %>%
+  filter(keep == "y") %>% 
+  rename(Observer=Observer.x, Date=Date.x) %>%
+  dplyr::select(all_of(original_duet_variables)) -> duets
+```
+
+Next, we want to split the data into 1-hour time windows so that we can determine how many observer activity hours we have for each window. We also want to know how many duets we recorded in each 1-hour window.
+```{r}
+# Add columns for each hour of the day to observer activity data
+oa$`05:30--06:30` <- as.duration(lubridate::intersect(oa$Interval, interval(make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=5,min=30,sec=0,tz="America/Bogota"),make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=6,min=29,sec=59,tz="America/Bogota"))))
+oa$`06:30--07:30` <- as.duration(lubridate::intersect(oa$Interval, interval(make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=6,min=30,sec=0,tz="America/Bogota"),make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=7,min=29,sec=59,tz="America/Bogota"))))
+oa$`07:30--08:30` <- as.duration(lubridate::intersect(oa$Interval, interval(make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=7,min=30,sec=0,tz="America/Bogota"),make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=8,min=29,sec=59,tz="America/Bogota"))))
+oa$`08:30--09:30` <- as.duration(lubridate::intersect(oa$Interval, interval(make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=8,min=30,sec=0,tz="America/Bogota"),make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=9,min=29,sec=59,tz="America/Bogota"))))
+oa$`09:30--10:30` <- as.duration(lubridate::intersect(oa$Interval, interval(make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=9,min=30,sec=0,tz="America/Bogota"),make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=10,min=29,sec=59,tz="America/Bogota"))))
+oa$`10:30--11:30` <- as.duration(lubridate::intersect(oa$Interval, interval(make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=10,min=30,sec=0,tz="America/Bogota"),make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=11,min=29,sec=59,tz="America/Bogota"))))
+oa$`11:30--12:30` <- as.duration(lubridate::intersect(oa$Interval, interval(make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=11,min=30,sec=0,tz="America/Bogota"),make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=12,min=29,sec=59,tz="America/Bogota"))))
+oa$`12:30--13:30` <- as.duration(lubridate::intersect(oa$Interval, interval(make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=12,min=30,sec=0,tz="America/Bogota"),make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=13,min=29,sec=59,tz="America/Bogota"))))
+oa$`13:30--14:30` <- as.duration(lubridate::intersect(oa$Interval, interval(make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=13,min=30,sec=0,tz="America/Bogota"),make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=14,min=29,sec=59,tz="America/Bogota"))))
+oa$`14:30--15:30` <- as.duration(lubridate::intersect(oa$Interval, interval(make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=14,min=30,sec=0,tz="America/Bogota"),make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=15,min=29,sec=59,tz="America/Bogota"))))
+oa$`15:30--16:30` <- as.duration(lubridate::intersect(oa$Interval, interval(make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=15,min=30,sec=0,tz="America/Bogota"),make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=16,min=29,sec=59,tz="America/Bogota"))))
+oa$`16:30--17:30` <- as.duration(lubridate::intersect(oa$Interval, interval(make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=16,min=30,sec=0,tz="America/Bogota"),make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=17,min=29,sec=59,tz="America/Bogota"))))
+oa$`17:30--18:30` <- as.duration(lubridate::intersect(oa$Interval, interval(make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=17,min=30,sec=0,tz="America/Bogota"),make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=18,min=29,sec=59,tz="America/Bogota"))))
+
+# Add variable 'sumrow' that calculates seconds spent doing fieldwork.
+oa <- oa %>%
+  mutate(sumrow = rowSums(dplyr::pick(contains("--")), na.rm = T))
+
+# Create list of all time windows
+my_vars <- oa %>% dplyr::select(contains("--")) %>% names()
+
+# Create new data frame that lists number of field hours per hour of the day.
+oa_summary <- oa %>% summarise_at(my_vars, sum, na.rm = TRUE)/3600
+
+# Pivot orientation of data frame.
+oa_summary <- as_tibble(oa_summary) %>% pivot_longer(cols = everything(), names_to = "hour_of_day", values_to = "total_hours")
+
+# Add columns for each hour of the day to duet data
+duets$`05:30--06:30` <- duets$DateStartTime %within% interval(make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=5,min=30,sec=0,tz="America/Bogota"),make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=6,min=29,sec=59,tz="America/Bogota"))
+duets$`06:30--07:30` <- duets$DateStartTime %within% interval(make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=6,min=30,sec=0,tz="America/Bogota"),make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=7,min=29,sec=59,tz="America/Bogota"))
+duets$`07:30--08:30` <- duets$DateStartTime %within% interval(make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=7,min=30,sec=0,tz="America/Bogota"),make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=8,min=29,sec=59,tz="America/Bogota"))
+duets$`08:30--09:30` <- duets$DateStartTime %within% interval(make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=8,min=30,sec=0,tz="America/Bogota"),make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=9,min=29,sec=59,tz="America/Bogota"))
+duets$`09:30--10:30` <- duets$DateStartTime %within% interval(make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=9,min=30,sec=0,tz="America/Bogota"),make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=10,min=29,sec=59,tz="America/Bogota"))
+duets$`10:30--11:30` <- duets$DateStartTime %within% interval(make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=10,min=30,sec=0,tz="America/Bogota"),make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=11,min=29,sec=59,tz="America/Bogota"))
+duets$`11:30--12:30` <- duets$DateStartTime %within% interval(make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=11,min=30,sec=0,tz="America/Bogota"),make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=12,min=29,sec=59,tz="America/Bogota"))
+duets$`12:30--13:30` <- duets$DateStartTime %within% interval(make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=12,min=30,sec=0,tz="America/Bogota"),make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=13,min=29,sec=59,tz="America/Bogota"))
+duets$`13:30--14:30` <- duets$DateStartTime %within% interval(make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=13,min=30,sec=0,tz="America/Bogota"),make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=14,min=29,sec=59,tz="America/Bogota"))
+duets$`14:30--15:30` <- duets$DateStartTime %within% interval(make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=14,min=30,sec=0,tz="America/Bogota"),make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=15,min=29,sec=59,tz="America/Bogota"))
+duets$`15:30--16:30` <- duets$DateStartTime %within% interval(make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=15,min=30,sec=0,tz="America/Bogota"),make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=16,min=29,sec=59,tz="America/Bogota"))
+duets$`16:30--17:30` <- duets$DateStartTime %within% interval(make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=16,min=30,sec=0,tz="America/Bogota"),make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=17,min=29,sec=59,tz="America/Bogota"))
+duets$`17:30--18:30` <- duets$DateStartTime %within% interval(make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=17,min=30,sec=0,tz="America/Bogota"),make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=18,min=29,sec=59,tz="America/Bogota"))
+
+# Add variable 'sumrow' that calculates thee number of duets recorded in each hour of the day.
+duets <- duets %>%
+  mutate(sumrow = rowSums(dplyr::pick(contains("--")), na.rm = T))
+
+# Create list of all time windows
+my_vars <- duets %>% dplyr::select(contains("--")) %>% names()
+
+# Create new data frame that lists number of duets per hour of the day.
+duet_summary <- duets %>% summarise_at(my_vars, sum, na.rm = TRUE)
+
+# Pivot orientation of data frame.
+duet_summary <- as_tibble(duet_summary) %>% pivot_longer(cols = everything(), names_to = "hour_of_day", values_to = "total_calls")
+```
+
+We've now properly set up our two data sets (observer activity data and duet data). Next, let's examine the data.
+```{r}
+# Calculate total number of duets in this data set: 820
+total_calls <- sum(duet_summary$total_calls) 
+
+# Merge observer activity data and duet data
+summary <- left_join(
+    oa_summary,
+    duet_summary,
+    by = "hour_of_day") %>%
+  mutate(calls_per_100_hours =
+    total_calls/total_hours * 100)
+
+summary$hour_of_day <- c("05:30-06:30", "06:30-07:30","07:30-08:30","08:30-09:30","09:30-10:30","10:30-11:30","11:30-12:30","12:30-13:30","13:30-14:30","14:30-15:30","15:30-16:30","16:30-17:30","17:30-18:30")
+
+# Add new column that gives proportian of all calls that falls within each 1-hour window
+summary <- summary %>%
+  mutate(proportion_of_all_calls = calls_per_100_hours/sum(calls_per_100_hours))
+```
+
+We followed group L from 05:30 to 11:00, so roughly the first five hours after a group wakes up. What percentage of all calls do we record in that time?
+```{r}
+prop_calls_before_1030 <- summary %>% filter(hour_of_day == "05:30-06:30" | hour_of_day == "06:30-07:30" | hour_of_day == "07:30-08:30" | hour_of_day == "08:30-09:30" | hour_of_day == "09:30-10:30") %>% summarize(total = sum(proportion_of_all_calls))
+
+prop_calls_before_1030
+
+```
+By following a group of titi monkeys from 05:30 to 11:00 we would likely capture over 88% of all duets. The last 12% of duets takes place in the last 8 hours of time (between 10:30 and 18:30) that a group is generally active.
+
+# Create plot of duet distribution
+```{r}
+duet_plot <- ggplot(summary) +
+  geom_bar(
+    aes(x = hour_of_day,
+        y = total_hours/100,
+        fill = "Observer Hours"),
+    stat = "identity") +
+  geom_line(
+    aes(x = hour_of_day,
+        y = calls_per_100_hours / 5,
+        color = "Duets"),
+    linewidth = 1.5,
+    group = "identity") +
+  labs(x = "Hour of Day") +
+  theme_light() +
+  theme(axis.title = element_text(size = 14),
+    axis.text = element_text(size = 12),
+    plot.title = element_text(size = 16),
+    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, margin = margin(t = 5, r = 0, b = 10, l = 0)),
+    axis.title.y = element_text(margin = margin(t = 0, r = 5, b = 0, l = 0)),
+    axis.title.y.right = element_text(margin = margin(t = 0, r = 0, b = 0, l = 10)),
+    legend.justification = c(1, 1),
+    legend.position = c(0.97, 0.97),
+    legend.title = element_blank(),
+    legend.text = element_text(size = 12),
+    legend.spacing.y = unit(-0.1, "cm"),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank()) +
+# Custom the Y scales:
+  scale_y_continuous(
+    name = "Hundreds of Observer Hours in Field",
+    limits = c(0, 13),
+    # Add a second axis and specify its features
+    sec.axis = sec_axis(trans = ~. * 5, name = "Duets Heard per Hundred Field Hours")) +
+  scale_fill_manual(
+    guide = guide_legend(
+      direction = "vertical"),
+    values = c("Observer Hours" = "darkgrey")) +
+  scale_color_manual(
+    guide = guide_legend(direction = "vertical"),
+    values = c("Duets" = "black")) +
+  guides(fill = guide_legend(order = 1), 
+         color = guide_legend(order = 2))
+
+duet_plot
+```
+
+
+## Step 4: Calculating Duet Source Level
+We calculate the source level for the duets using a 5-second window at the start of each duet. 
+Our modified version of the PAMGuide package relies on two columns:
+- 'StartTime': Contains the time of day at which the audio file was started.
+- 'CallOnset': Contains the time of day the duet started.
+- 'Channel': When working with stereo recordings, which channel would you like to analyze?
+- 'windowDirection': Input options are 'before' and 'after'. 'Before' analyzes the 5-second window after your call onset (when measuring background noise), whereas 'after' analyzed the 5-second window after your call onset (used when measuring the signal itself).
+PAMGuide then uses this to determine how many seconds into the audio file it needs to start the 5-second measurement.
+```{r}
+# New variable to define window length that PAMGuide uses for SNR measurements.
+window_length <- 5
+
+# Turn date into YMD format
+homerange$Date <- parse_date_time(homerange$Date, "mdy")
+```
+
+
+```{r}
+#Create a column called 'StartTime_Duration' that gives us the time of day at which the recorder started in seconds from midnight.
+homerange$StartTime_Duration <- as.duration(homerange$StartTime)
+
+# This then allows us to create a column named 'CallOnset' that gives us the start time of the duet in HH:MM:SS by adding 'Start_duet_sec' to 'StartTime' of recording. This is needed as the column 'Start_duet_sec' gives the start time as seconds since start of the recording (a result of extracting duet onset times in Raven Pro).
+homerange$CallOnset = homerange$StartTime_Duration + homerange$Start_duet_sec
+homerange$CallOnset = seconds_to_period(homerange$CallOnset)
+homerange$CallOnset = parse_date_time(homerange$CallOnset, "HMS")
+
+homerange$StartTime = parse_date_time(homerange$StartTime, "HMS")
+```
+
+Calculating RMS levels using PAMGuide:
+```{r}
+# Calculating calibrated RMS levels using PAMGuide:
+  # We only calculate the SPL for the 700-1400 Hz frequency range.
+
+homerange <- homerange %>% rowwise() %>% 
+  mutate(CalibratedSPL = PAMGuide_Meta_revised(fullfile = paste0("Audio/", FileName), 
+                                           atype= "Broadband",
+                                           StartTime=StartTime,
+                                           CallOnset=CallOnset,
+                                           seconds = window_length,
+                                           windowDirection = "after",
+                                           lcut= 700,
+                                           hcut= 1400,
+                                           calib= 1,
+                                           ctype= "TS",
+                                           Mh=-36,
+                                           G=48,
+                                           vADC=1.414,
+                                           plottype= "Stats",
+                                           channel = MicUsed)["RMSlev"]) # NOTE: Here channel is assigned to be MicUsed
+
+
+homerange <- homerange %>% rowwise() %>% mutate(CalibratedSPL = ifelse(!is.null(CalibratedSPL[[1]]), CalibratedSPL[[1]], NA))
+
+# Calculating source level using the inverse square law
+homerange$sourcelevel <- with(homerange, homerange$CalibratedSPL-(20*log10(1/homerange$Distance)))
+```
+
+```{r}
+# Arrange source level data in descending order
+top2 <- homerange %>%
+  arrange(desc(sourcelevel)) 
+
+# Keep only highest 2 source level values
+top2 <- top2[c(1,2),]
+
+#Calculate mean of two highest source level values
+mean(top2$sourcelevel)
+```
+The source level of the two duets closest to the recorder comes out at 91.9 dB re 20 μPa at 1m. However, this underestimates the source level as it does not account for the effect of excess attenuation on duet propagation. We'll look at that next.
+
+## Step 5: Attenuation
