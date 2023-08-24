@@ -34,8 +34,14 @@ oa <- read_csv("Data/Observer_Activity_Script1.csv", col_names = TRUE)
 duets <- read_csv("Data/Duets_Script1.csv", col_names = TRUE)
 
 # Step 4 data
-homerange <- read_csv("Data/Homerange_Data_Script1.csv", col_names = TRUE)
+homerange1 <- read_csv("Data/Home_Range_Data_Part1_Script1.csv", col_names = TRUE)
+homerange2 <- read_csv("Data/Home_Range_Data_Part2_Script1.csv", col_names = TRUE)
+
 source("Scripts/Script 4.R") 
+
+# Step 5 data
+d100 <- read_csv("Data/Playback_100dB_Script1.csv", col_names = TRUE) # Load in file
+
 ```
 
 # Step 3: Temporal Distribution of Titi Duets
@@ -233,26 +239,31 @@ Our modified version of the PAMGuide package relies on two columns:
 - 'CallOnset': Contains the time of day the duet started.
 - 'Channel': When working with stereo recordings, which channel would you like to analyze?
 - 'windowDirection': Input options are 'before' and 'after'. 'Before' analyzes the 5-second window after your call onset (when measuring background noise), whereas 'after' analyzed the 5-second window after your call onset (used when measuring the signal itself).
-PAMGuide then uses this to determine how many seconds into the audio file it needs to start the 5-second measurement.
+PAMGuide then uses this to determine how many seconds into the audio file it needs to start the 5-second measurement. Here we use short clips of the two duets recorded clostst to the Song Meters to demonstrate the modified PAMGuide code.
 ```{r}
 # New variable to define window length that PAMGuide uses for SNR measurements.
 window_length <- 5
 
 # Turn date into YMD format
-homerange$Date <- parse_date_time(homerange$Date, "mdy")
+homerange1$Date <- parse_date_time(homerange1$Date, "mdy")
 ```
 
 
 ```{r}
 #Create a column called 'StartTime_Duration' that gives us the time of day at which the recorder started in seconds from midnight.
-homerange$StartTime_Duration <- as.duration(homerange$StartTime)
+homerange1$StartTime_Duration <- as.duration(homerange1$StartTime)
 
-# This then allows us to create a column named 'CallOnset' that gives us the start time of the duet in HH:MM:SS by adding 'Start_duet_sec' to 'StartTime' of recording. This is needed as the column 'Start_duet_sec' gives the start time as seconds since start of the recording (a result of extracting duet onset times in Raven Pro).
-homerange$CallOnset = homerange$StartTime_Duration + homerange$Start_duet_sec
-homerange$CallOnset = seconds_to_period(homerange$CallOnset)
-homerange$CallOnset = parse_date_time(homerange$CallOnset, "HMS")
+# This then allows us to create a column named 'CallOnset' that gives us the start 
+# time of the duet in HH:MM:SS by adding 'Start_duet_sec' to 'StartTime' of recording. 
+# This is needed as the column 'Start_duet_sec' gives the start time as seconds 
+# since start of the recording (a result of extracting duet onset times in Raven Pro).
+homerange1$CallOnset = homerange1$StartTime_Duration + homerange1$Start_duet_sec
 
-homerange$StartTime = parse_date_time(homerange$StartTime, "HMS")
+# Turn time in seconds back into POSIXct date-time object.
+homerange1$CallOnset = seconds_to_period(homerange1$CallOnset)
+homerange1$CallOnset = parse_date_time(homerange1$CallOnset, "HMS")
+
+homerange1$StartTime = parse_date_time(homerange1$StartTime, "HMS")
 ```
 
 Calculating RMS levels using PAMGuide:
@@ -260,8 +271,8 @@ Calculating RMS levels using PAMGuide:
 # Calculating calibrated RMS levels using PAMGuide:
   # We only calculate the SPL for the 700-1400 Hz frequency range.
 
-homerange <- homerange %>% rowwise() %>% 
-  mutate(CalibratedSPL = PAMGuide_Meta_revised(fullfile = paste0("Audio/", FileName), 
+homerange1 <- homerange1 %>% rowwise() %>% 
+  mutate(CalibratedSPL = PAMGuide_Meta_revised(fullfile = paste0("Audio/SourceLevel/", ... = FileName), 
                                            atype= "Broadband",
                                            StartTime=StartTime,
                                            CallOnset=CallOnset,
@@ -275,26 +286,95 @@ homerange <- homerange %>% rowwise() %>%
                                            G=48,
                                            vADC=1.414,
                                            plottype= "Stats",
-                                           channel = MicUsed)["RMSlev"]) # NOTE: Here channel is assigned to be MicUsed
+                                           channel = MicUsed)["RMSlev"]) # NOTE: Here channel is assigned to be pulled from the column 'MicUsed'
+
+# PAMGuide adds results as a list to the column 'CalibratedSPL'. 
+homerange1 <- homerange1 %>% rowwise() %>% mutate(CalibratedSPL = ifelse(!is.null(CalibratedSPL[[1]]), CalibratedSPL[[1]], NA)) # Pulls out only RMS level results.
 
 
-homerange <- homerange %>% rowwise() %>% mutate(CalibratedSPL = ifelse(!is.null(CalibratedSPL[[1]]), CalibratedSPL[[1]], NA))
-
-# Calculating source level using the inverse square law
-homerange$sourcelevel <- with(homerange, homerange$CalibratedSPL-(20*log10(1/homerange$Distance)))
+# Using the RMS va,ues to calculate source level using the inverse square law.
+homerange1$sourcelevel <- with(homerange1, homerange1$CalibratedSPL-(20*log10(1/homerange1$Distance)))
 ```
 
 ```{r}
-# Arrange source level data in descending order
-top2 <- homerange %>%
-  arrange(desc(sourcelevel)) 
-
-# Keep only highest 2 source level values
-top2 <- top2[c(1,2),]
-
 #Calculate mean of two highest source level values
-mean(top2$sourcelevel)
+mean(homerange1$sourcelevel)
 ```
 The source level of the two duets closest to the recorder comes out at 91.9 dB re 20 μPa at 1m. However, this underestimates the source level as it does not account for the effect of excess attenuation on duet propagation. We'll look at that next.
 
-## Step 5: Attenuation
+
+## Step 5: Attenuation (by Tony Di Fiore)
+
+To determine the amount of excess attenuation, we compare the expected sound pressure level (SPL) assuming no excess attenuation (calculated using the inverse square using from the known calibrated playback amplitude of 100 dB at 1m) to the observed SPL at each of the distances at which we conducted playbacks. 
+First we create two separate data frames, one for expected SPL data and one for observed SPL data.
+```{r}
+exp_d100 <- d100 %>% filter(Group == "exp")
+obs_d100 <- d100 %>% filter(Group == "obs")
+```
+
+```{r}
+exp100 <- lm(data = exp_d100, sourcelevel ~ log(pythagoras_distance)) # Fit linear model to expected data.
+obs100 <- lm(data = obs_d100, CalibratedSPL ~ log(pythagoras_distance)) # Fit linear model to observed data.
+
+broom::tidy(exp100) # summarizes information about model components
+summary(exp100)
+broom::tidy(obs100)
+summary(obs100)
+```
+
+```{r}
+# Add in 38.2 and 48.4 to get interpolated values for absolute received level at these distances
+dist100a <- c(1, 10, 25, 38.2, 48.4, 50, 75, 100, 125, 150, 175, 200)
+
+excess_attenuation100a <- (broom::tidy(exp100)$estimate[1] + broom::tidy(exp100)$estimate[2] * log(dist100a)) - (broom::tidy(obs100)$estimate[1] + broom::tidy(obs100)$estimate[2] * log(dist100a))
+
+excess_attenuation100a <- tibble(distance = dist100a, excess_attenuation = excess_attenuation100a)
+
+dist100b <- c(1, 2, 4, 8, 16, 32, 64, 128, 256)
+excess_attenuation100a <- (broom::tidy(exp100)$estimate[1] + broom::tidy(exp100)$estimate[2] * log(dist100a)) - (broom::tidy(obs100)$estimate[1] + broom::tidy(obs100)$estimate[2] * log(dist100a))
+
+excess_attenuation100a <- tibble(distance = dist100a, excess_attenuation = excess_attenuation100a)
+
+```
+Create Figure 4, panel C
+```{r}
+panelC <- ggplot(data = exp_d100) +
+  geom_point(aes(x = pythagoras_distance, y = sourcelevel, color = "Theoretical")) +
+  geom_smooth(aes(x = pythagoras_distance, y = sourcelevel, color = "Theoretical"), method = "lm", formula = y ~ log(x), se = FALSE, linetype = 1) +
+  geom_point(data = obs_d100, aes(x = pythagoras_distance, y = CalibratedSPL, color = "Observed")) +
+  geom_smooth(data = obs_d100, aes(x = pythagoras_distance, y = CalibratedSPL, color = "Observed"), method = "lm", formula = y ~log(x)) +
+  ylab("Absolute Received Level (dB)\n(700 to 1400 Hz)") +
+  xlab("Distance from source (m)") +
+  scale_x_continuous(limits = c(0, NA)) + # note open upper limit
+  scale_y_continuous(limits = c(0, 110), breaks = c(0, 20, 40, 60, 80, 100)) + # note 110 upper limit and 0 lower limit, not 25
+  ggtitle("Playback dataset - 100 SPL (dB re 20 ?Pa @ 1 m)") +
+  theme_bw() +
+  theme(legend.title = element_blank(),
+        legend.position = c(0.8, 0.8),
+        legend.spacing.y = unit(0, "mm"),
+        legend.box.background = element_rect(colour = "black", fill = NA)) +
+  scale_color_manual(name = "Series", breaks = c("Theoretical", "Observed"), values = c("Theoretical" = "red", "Observed" = "blue")) +
+  theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))
+
+panelC
+```
+
+Create Figure 4, panel D.
+```{r}
+panelD <- ggplot(data = excess_attenuation100) +
+  geom_point(aes(x = distance, y = excess_attenuation)) +
+  geom_smooth(aes(x = distance, y = excess_attenuation), method = "lm", formula = y ~ log(x), color = "black") +
+  ylab("Estimated Excess\nAttenuation (dB)") +
+  xlab("Distance from source (m)") +
+  scale_x_continuous(limits = c(0, NA)) + # note open upper limit
+  scale_y_continuous(limits = c(0, NA), breaks = c(0, 3, 6, 9, 12, 15, 18, 21)) + # note open upper limit +
+  ggtitle("Playback dataset - 100 SPL (dB re 20 ?Pa @ 1 m)") +
+  theme_bw() +
+  theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
+  geom_vline(xintercept = c(38.2, 48.4), color = "red")
+
+panelD
+```
+
