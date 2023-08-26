@@ -37,10 +37,12 @@ duets <- read_csv("Data/Duets_Script1.csv", col_names = TRUE)
 homerange1 <- read_csv("Data/Home_Range_Data_Part1_Script1.csv", col_names = TRUE)
 homerange2 <- read_csv("Data/Home_Range_Data_Part2_Script1.csv", col_names = TRUE)
 
-source("Scripts/Script 4.R") 
+source("Script 4.R") 
 
 # Step 5 data
-d100 <- read_csv("Data/Playback_100dB_Script1.csv", col_names = TRUE) # Load in file
+exp_d100 <- read_csv("Data/Playback_exp.csv", col_names = TRUE) # Load in file
+obs_d100 <- read_csv("Data/Playback_obs.csv", col_names = TRUE) # Load in file
+
 
 ```
 
@@ -49,9 +51,10 @@ d100 <- read_csv("Data/Playback_100dB_Script1.csv", col_names = TRUE) # Load in 
 If possible, recording schedules for PAM should be tailored to the characteristics of your species' vocal activity such as the temporal pattern (both time of day and seasonal trends if known). Here, we determine the temporal pattern of titi duets.
 
 ```{r}
-# Parse date and time input vectors into POSIXct date-time objects.
+# Turns our ogirinal date variable into a POSIXct date object with YYYY-MM-DD format.
 oa$Date <- parse_date_time2(oa$Date, orders = c("mdY", "mdy"), tz = "America/Bogota")
 
+# Create a POSIXct date-time object for the time the observer activity started.
 oa$DatetimeStart <- make_datetime(year(oa$Date),
                                   month(oa$Date),
                                   day(oa$Date),
@@ -60,6 +63,7 @@ oa$DatetimeStart <- make_datetime(year(oa$Date),
                                   second(oa$Time_Start), 
                                   tz = "America/Bogota")
 
+# Create a POSIXct date-time object for the time the observer activity ended.
 oa$DatetimeEnd <- make_datetime(year(oa$Date),
                                 month(oa$Date),
                                 day(oa$Date),
@@ -68,10 +72,11 @@ oa$DatetimeEnd <- make_datetime(year(oa$Date),
                                 second(oa$Time_End),
                                 tz = "America/Bogota")
 
-duets$Date <- parse_date_time2(duets$Date, 
-                               orders = c("mdY", "mdy"), 
-                               tz = "America/Bogota")
 
+# Turns our ogirinal date variable into a POSIXct date object with YYYY-MM-DD format.
+duets$Date <- parse_date_time2(duets$Date, orders = c("mdY", "mdy"), tz = "America/Bogota")
+
+# Create a POSIXct date-time object for the time the duet was first heard.
 duets$DateStartTime <- make_datetime(year(duets$Date),
                                      month(duets$Date),
                                      day(duets$Date),
@@ -81,7 +86,7 @@ duets$DateStartTime <- make_datetime(year(duets$Date),
                                      tz = "America/Bogota")
 ```
 
-The duet data could include duets that were recorded while observers were not conducting field work. These duet records will need to be removed first.
+We want to remove any duets that were recorded while people doing work other than field work, as it is likely many other duets during these time periods would be missed. 
 ```{r}
 oa$Duration <- oa$DatetimeEnd - oa$DatetimeStart # Calculate duration of field work in seconds
 oa$Interval <- interval(oa$DatetimeStart,oa$DatetimeEnd) # Create an interval variable
@@ -113,8 +118,7 @@ oa$`16:30--17:30` <- as.duration(lubridate::intersect(oa$Interval, interval(make
 oa$`17:30--18:30` <- as.duration(lubridate::intersect(oa$Interval, interval(make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=17,min=30,sec=0,tz="America/Bogota"),make_datetime(year(oa$Date),month(oa$Date),day(oa$Date), hour=18,min=29,sec=59,tz="America/Bogota"))))
 
 # Add variable 'sumrow' that calculates seconds spent doing fieldwork.
-oa <- oa %>%
-  mutate(sumrow = rowSums(dplyr::pick(contains("--")), na.rm = T))
+oa <- oa %>% mutate(sumrow = rowSums(dplyr::pick(contains("--")), na.rm = T))
 
 # Create list of all time windows
 my_vars <- oa %>% dplyr::select(contains("--")) %>% names()
@@ -141,8 +145,7 @@ duets$`16:30--17:30` <- duets$DateStartTime %within% interval(make_datetime(year
 duets$`17:30--18:30` <- duets$DateStartTime %within% interval(make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=17,min=30,sec=0,tz="America/Bogota"),make_datetime(year(duets$Date),month(duets$Date),day(duets$Date), hour=18,min=29,sec=59,tz="America/Bogota"))
 
 # Add variable 'sumrow' that calculates thee number of duets recorded in each hour of the day.
-duets <- duets %>%
-  mutate(sumrow = rowSums(dplyr::pick(contains("--")), na.rm = T))
+duets <- duets %>% mutate(sumrow = rowSums(dplyr::pick(contains("--")), na.rm = T))
 
 # Create list of all time windows
 my_vars <- duets %>% dplyr::select(contains("--")) %>% names()
@@ -169,7 +172,7 @@ summary <- left_join(
 
 summary$hour_of_day <- c("05:30-06:30", "06:30-07:30","07:30-08:30","08:30-09:30","09:30-10:30","10:30-11:30","11:30-12:30","12:30-13:30","13:30-14:30","14:30-15:30","15:30-16:30","16:30-17:30","17:30-18:30")
 
-# Add new column that gives proportian of all calls that falls within each 1-hour window
+# Add new column that gives proportion of all calls that falls within each 1-hour window
 summary <- summary %>%
   mutate(proportion_of_all_calls = calls_per_100_hours/sum(calls_per_100_hours))
 ```
@@ -183,8 +186,9 @@ prop_calls_before_1030
 ```
 By following a group of titi monkeys from 05:30 to 11:00 we would likely capture over 88% of all duets. The last 12% of duets takes place in the last 8 hours of time (between 10:30 and 18:30) that a group is generally active.
 
-# Create plot of duet distribution
+We'll visualize the temporal distribution of duets with a graph. This graph is identical to Figure 2 in the paper.
 ```{r}
+# Create plot of duet distribution
 duet_plot <- ggplot(summary) +
   geom_bar(
     aes(x = hour_of_day,
@@ -212,7 +216,7 @@ duet_plot <- ggplot(summary) +
     legend.spacing.y = unit(-0.1, "cm"),
     panel.grid.major = element_blank(),
     panel.grid.minor = element_blank()) +
-# Custom the Y scales:
+# Custom Y scales:
   scale_y_continuous(
     name = "Hundreds of Observer Hours in Field",
     limits = c(0, 13),
@@ -252,11 +256,13 @@ homerange1$Date <- parse_date_time(homerange1$Date, "mdy")
 ```{r}
 #Create a column called 'StartTime_Duration' that gives us the time of day at which the recorder started in seconds from midnight.
 homerange1$StartTime_Duration <- as.duration(homerange1$StartTime)
+```
 
-# This then allows us to create a column named 'CallOnset' that gives us the start 
-# time of the duet in HH:MM:SS by adding 'Start_duet_sec' to 'StartTime' of recording. 
-# This is needed as the column 'Start_duet_sec' gives the start time as seconds 
-# since start of the recording (a result of extracting duet onset times in Raven Pro).
+This then allows us to create a column named 'CallOnset' that gives us the start 
+time of the duet in HH:MM:SS by adding 'Start_duet_sec' to 'StartTime' of recording. 
+This is needed as the column 'Start_duet_sec' gives the start time as seconds 
+since start of the recording (a result of extracting duet onset times in Raven Pro).
+```{r}
 homerange1$CallOnset = homerange1$StartTime_Duration + homerange1$Start_duet_sec
 
 # Turn time in seconds back into POSIXct date-time object.
@@ -272,21 +278,22 @@ Calculating RMS levels using PAMGuide:
   # We only calculate the SPL for the 700-1400 Hz frequency range.
 
 homerange1 <- homerange1 %>% rowwise() %>% 
-  mutate(CalibratedSPL = PAMGuide_Meta_revised(fullfile = paste0("Audio/SourceLevel/", ... = FileName), 
-                                           atype= "Broadband",
-                                           StartTime=StartTime,
-                                           CallOnset=CallOnset,
-                                           seconds = window_length,
-                                           windowDirection = "after",
-                                           lcut= 700,
-                                           hcut= 1400,
-                                           calib= 1,
-                                           ctype= "TS",
-                                           Mh=-36,
-                                           G=48,
-                                           vADC=1.414,
-                                           plottype= "Stats",
-                                           channel = MicUsed)["RMSlev"]) # NOTE: Here channel is assigned to be pulled from the column 'MicUsed'
+  mutate(CalibratedSPL = PAMGuide_Meta_revised(fullfile = paste0("Audio/SourceLevel/", 
+                                               ... = FileName), 
+                                               atype= "Broadband",
+                                               StartTime=StartTime,
+                                               CallOnset=CallOnset,
+                                               seconds = window_length,
+                                               windowDirection = "after",
+                                               lcut= 700,
+                                               hcut= 1400,
+                                               calib= 1,
+                                               ctype= "TS",
+                                               Mh=-36,
+                                               G=48,
+                                               vADC=1.414,
+                                               plottype= "Stats",
+                                               channel = MicUsed)["RMSlev"]) # NOTE: Here channel is assigned to be pulled from the column 'MicUsed'
 
 # PAMGuide adds results as a list to the column 'CalibratedSPL'. 
 homerange1 <- homerange1 %>% rowwise() %>% mutate(CalibratedSPL = ifelse(!is.null(CalibratedSPL[[1]]), CalibratedSPL[[1]], NA)) # Pulls out only RMS level results.
@@ -306,41 +313,45 @@ The source level of the two duets closest to the recorder comes out at 91.9 dB r
 ## Step 5: Attenuation (by Tony Di Fiore)
 
 To determine the amount of excess attenuation, we compare the expected sound pressure level (SPL) assuming no excess attenuation (calculated using the inverse square using from the known calibrated playback amplitude of 100 dB at 1m) to the observed SPL at each of the distances at which we conducted playbacks. 
-First we create two separate data frames, one for expected SPL data and one for observed SPL data.
 ```{r}
-exp_d100 <- d100 %>% filter(Group == "exp")
-obs_d100 <- d100 %>% filter(Group == "obs")
-```
-
-```{r}
-exp100 <- lm(data = exp_d100, sourcelevel ~ log(pythagoras_distance)) # Fit linear model to expected data.
+exp100 <- lm(data = exp_d100, ExpectedSPL ~ log(pythagoras_distance)) # Fit linear model to expected data.
 obs100 <- lm(data = obs_d100, CalibratedSPL ~ log(pythagoras_distance)) # Fit linear model to observed data.
 
 broom::tidy(exp100) # summarizes information about model components
-summary(exp100)
+summary(exp100) # View model summary
 broom::tidy(obs100)
 summary(obs100)
 ```
 
+Now we'll create a list of all playback distances. We add in the distances of the two duets closest to the recorder. We will then estimate the amount of excess attenuation on top of the expected attenuation due to spherical spreading for each of these distances. 
 ```{r}
-# Add in 38.2 and 48.4 to get interpolated values for absolute received level at these distances
-dist100a <- c(1, 10, 25, 38.2, 48.4, 50, 75, 100, 125, 150, 175, 200)
+dist100 <- c(1, 10, 25, 38.2, 48.4, 50, 75, 100, 125, 150, 175, 200)
 
-excess_attenuation100a <- (broom::tidy(exp100)$estimate[1] + broom::tidy(exp100)$estimate[2] * log(dist100a)) - (broom::tidy(obs100)$estimate[1] + broom::tidy(obs100)$estimate[2] * log(dist100a))
+excess_attenuation100 <- (broom::tidy(exp100)$estimate[1] + broom::tidy(exp100)$estimate[2] * log(dist100)) - (broom::tidy(obs100)$estimate[1] + broom::tidy(obs100)$estimate[2] * log(dist100))
 
-excess_attenuation100a <- tibble(distance = dist100a, excess_attenuation = excess_attenuation100a)
+excess_attenuation100 <- tibble(distance = dist100, excess_attenuation = excess_attenuation100)
 
+excess_attenuation100
+```
+The excess attenuation for the duets at distances 38.2 and 48.4 m have 12.5 and 13.2 dB of excess attenuation, respectively. 
+
+To see how much excess attenuation we see per doubling of distance, let's create a list of distances that demonstrates this. 
+```{r}
 dist100b <- c(1, 2, 4, 8, 16, 32, 64, 128, 256)
-excess_attenuation100a <- (broom::tidy(exp100)$estimate[1] + broom::tidy(exp100)$estimate[2] * log(dist100a)) - (broom::tidy(obs100)$estimate[1] + broom::tidy(obs100)$estimate[2] * log(dist100a))
+excess_attenuation100b <- (broom::tidy(exp100)$estimate[1] + broom::tidy(exp100)$estimate[2] * log(dist100b)) - (broom::tidy(obs100)$estimate[1] + broom::tidy(obs100)$estimate[2] * log(dist100b))
 
-excess_attenuation100a <- tibble(distance = dist100a, excess_attenuation = excess_attenuation100a)
+excess_attenuation100b <- tibble(distance = dist100b, excess_attenuation = excess_attenuation100b)
+
+excess_attenuation100b
 
 ```
-Create Figure 4, panel C
+Note that for each doubling of distance in this list, the excess attenuation increases by 2 dB. This is in addition to the 6 dB per doubling of distance caused by spherical spreading. This brings the total attenuation rate of titi monkey duets at Tiputini at 8 dB per doubling of distance.
+
+To visualize the linear model results, here we create Figure 4, panel C.
 ```{r}
 panelC <- ggplot(data = exp_d100) +
-  geom_point(aes(x = pythagoras_distance, y = sourcelevel, color = "Theoretical")) +
-  geom_smooth(aes(x = pythagoras_distance, y = sourcelevel, color = "Theoretical"), method = "lm", formula = y ~ log(x), se = FALSE, linetype = 1) +
+  geom_point(aes(x = pythagoras_distance, y = ExpectedSPL, color = "Theoretical")) +
+  geom_smooth(aes(x = pythagoras_distance, y = ExpectedSPL, color = "Theoretical"), method = "lm", formula = y ~ log(x), se = FALSE, linetype = 1) +
   geom_point(data = obs_d100, aes(x = pythagoras_distance, y = CalibratedSPL, color = "Observed")) +
   geom_smooth(data = obs_d100, aes(x = pythagoras_distance, y = CalibratedSPL, color = "Observed"), method = "lm", formula = y ~log(x)) +
   ylab("Absolute Received Level (dB)\n(700 to 1400 Hz)") +
@@ -360,7 +371,7 @@ panelC <- ggplot(data = exp_d100) +
 panelC
 ```
 
-Create Figure 4, panel D.
+To visualize the estimated excess attenuation rate, we create Figure 4, panel D.
 ```{r}
 panelD <- ggplot(data = excess_attenuation100) +
   geom_point(aes(x = distance, y = excess_attenuation)) +
