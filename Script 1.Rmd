@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Step 1: Install Dependencies
+# Install Dependencies
 This script was written in R version 4.1.2.
 ```{r, include = FALSE}
 # Package names
@@ -27,26 +27,26 @@ if (any(installed_packages == FALSE)) {
 lapply(packages, require, character.only = TRUE)    # Load multiple packages
 ```
 
-# Step 2: Load Datasets
+# Load Datasets
 ```{r, include = FALSE}
-# Step 3 data
+# Step 1 data
 oa <- read_csv("Data/Observer_Activity_Script1.csv", col_names = TRUE)
 duets <- read_csv("Data/Duets_Script1.csv", col_names = TRUE)
 
-# Step 4 data
+# Step 2 data
 homerange1 <- read_csv("Data/Home_Range_Data_Part1_Script1.csv", col_names = TRUE)
 homerange2 <- read_csv("Data/Home_Range_Data_Part2_Script1.csv", col_names = TRUE)
 
-source("Script 4.R") 
+source("Script 3.R") 
 
-# Step 5 data
+# Step 3 data
 exp_d100 <- read_csv("Data/Playback_exp.csv", col_names = TRUE) # Load in file
 obs_d100 <- read_csv("Data/Playback_obs.csv", col_names = TRUE) # Load in file
 
 
 ```
 
-# Step 3: Temporal Distribution of Titi Duets
+# Step 1: Temporal Distribution of Titi Duets
 
 If possible, recording schedules for PAM should be tailored to the characteristics of your species' vocal activity such as the temporal pattern (both time of day and seasonal trends if known). Here, we determine the temporal pattern of titi duets.
 
@@ -236,7 +236,7 @@ duet_plot
 ```
 
 
-## Step 4: Calculating Duet Source Level
+## Step 2: Calculating Duet Source Level
 We calculate the source level for the duets using a 5-second window at the start of each duet. 
 Our modified version of the PAMGuide package relies on two columns:
 - 'StartTime': Contains the time of day at which the audio file was started.
@@ -310,7 +310,7 @@ mean(homerange1$sourcelevel)
 The source level of the two duets closest to the recorder comes out at 91.9 dB re 20 μPa at 1m. However, this underestimates the source level as it does not account for the effect of excess attenuation on duet propagation. We'll look at that next.
 
 
-## Step 5: Attenuation (by Tony Di Fiore)
+## Step 3: Attenuation (by Tony Di Fiore)
 
 To determine the amount of excess attenuation, we compare the expected sound pressure level (SPL) assuming no excess attenuation (calculated using the inverse square using from the known calibrated playback amplitude of 100 dB at 1m) to the observed SPL at each of the distances at which we conducted playbacks. 
 ```{r}
