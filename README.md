@@ -26,8 +26,9 @@ The ***Data*** directory contains ## CSV files containing data used for our anal
 - Sun O'Brien
 
 ## References
-Katz, J., Hafner, S. D., and Donovan, T. (2016). Tools for automated acoustic monitoring within the R package monitoR. *Bioacoustics*, **25**, 197–210. doi: [10.1080/09524622.2016.1138415](10.1080/09524622.2016.1138415)
-Merchant, N.D., Fristrup, K.M., Johnson, M.P., Tyack, P.L., Witt, M.J., Blondel, P. and Parks, S.E. (2015). Measuring acoustic habitats. *Methods in Ecology and Evolution*, **6**: 257-265. doi:[10.1111/2041-210X.12330](https://doi.org/10.1111/2041-210X.12330)
+- Katz, J., Hafner, S.D., and Donovan, T. (2016). Tools for automated acoustic monitoring within the R package monitoR. *Bioacoustics*, **25**, 197–210. doi: [10.1080/09524622.2016.1138415](10.1080/09524622.2016.1138415)
+- Merchant, N.D., Fristrup, K.M., Johnson, M.P., Tyack, P.L., Witt, M.J., Blondel, P. and Parks, S.E. (2015). Measuring acoustic habitats. *Methods in Ecology and Evolution*, **6**: 257-265. doi:[10.1111/2041-210X.12330](https://doi.org/10.1111/2041-210X.12330)
+- van Kuijk, S.M., O'Brien, S., Clink, D.J., Blake, J.G., and Di Fiore, A. (2023). Automated detection and detection range of primate duets: a case study of the red titi monkey (*Plecturocebus discolor*) using passive acoustic monitoring. *Frontiers in Ecology and Evolution*, **11**, 1173722. doi: [10.3389/fevo.2023.1173722](https://doi.org/10.3389/fevo.2023.1173722)
 
 ## Licenses
 This work is licensed under a Creative Commons Attribution 4.0 International License. http://creativecommons.org/licenses/by/4.0/
