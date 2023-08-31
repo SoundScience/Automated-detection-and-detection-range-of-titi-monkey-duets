@@ -13,14 +13,14 @@ The main directory contains four R-scripts related to different analyses:
 
 ## ***Data*** Directory
 The ***Data*** directory contains ## CSV files containing data used for our analyses:
-# **Script1**
+### **Script1**
 - **Duets_Script1.csv**: A list of all duets we extracted from the Projecto Primates database from observers that followed titi monkeys.
 - **Observer_Activity_Script1.csv**: The activity data of the observers following titi monkeys. We only want to use data from times where people were actively following titi monkeys, as periods of time when people were doing other non-field work related tasks, like office work, is less likely to reliably record all titi duets.
 - **Home_Range_Data_Part1_Script1.csv**: 
 - **Home_Range_Data_Part2_Script1.csv**: 
 - **Playback_exp.csv**:
 - **Playback_obs.csv**:
-# **Script 2**
+### **Script 2**
 - **audioFileList**: A list of four audio files that we'll use to demonstrate how we used *monitoR*'s binary point matching algorithm to detect titi duets in our audio data. 
 
 
