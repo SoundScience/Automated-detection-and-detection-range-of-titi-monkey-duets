@@ -45,7 +45,7 @@ fileList <- list.files(path = "Audio/AutomatedDetection/Templates", full.names =
 ```
 
 
-Creating templates with the monitoR package is a fairly straightforward process. You can read more details on the process in Katz et al. (2016). However, creating templates that capture your signals of interest well requires some trial and error. In creating templates, test a variation of frequency ranges, time frames and amplitude cutoffs to determine what works well for each template.In our experience, setting the upper and lower frequency limit too close to the actual frequency range of the call led to a lower accuracy. Templates scored better when a little ambient noise above and below the frequencies of interest was included. 
+Creating templates with the monitoR package is a fairly straightforward process. You can read more details on the process in Katz et al. (2016) or this vignette: https://cran.r-project.org/web/packages/monitoR/monitoR.pdf. However, creating templates that capture your signals of interest well requires some trial and error. In creating templates, test a variation of frequency ranges, time frames and amplitude cutoffs to determine what works well for each template.In our experience, setting the upper and lower frequency limit too close to the actual frequency range of the call led to a lower accuracy. Templates scored better when a little ambient noise above and below the frequencies of interest was included. 
 
 You'll also want to play around with combinations of templates to see what gives you the best results. We found that the combination of templates that worked best included calls of different quality (calls both close to and at larger distance from the recorder).
 Use a training dataset to test your templates. The code needed to test your data is similar to the code you'll run when analyzing your actual dataset.
@@ -76,14 +76,8 @@ howler_temps <- combineBinTemplates(template3,
                                     template4)
 ```
 
-# Step 1.2: Analyze your data using your templates
-```{r}
-# Create a data frame of all audio files you want to analyze.
-audioFileList <- data.frame(f = list.files(path = "Audio/AutomatedDetection/TestData",
-                                           full.names = TRUE, 
-                                           recursive = TRUE)) # lists all of files recursively
-```
 
+# Step 1.2: Analyze your data using your templates
 
 ```{r}
 # Create a text file to store the output.
@@ -92,11 +86,12 @@ outfile <- "detection_output.txt"
 sink(file = outfile)
 ```
 
+This is the part that  can't get to work. 
 ```{r}
 # Loop through all .wav files and run binMatch().
-# This code generates ONE output file (.txt) containing "scores" for each .wav file (n = 1200 total)
+# This code generates one output file (.txt) containing "scores" for each .wav file.
 
-for (i in 1:nrow(audioFileList)) { # replace `nrow(audioFileList[1:testfiles,]` with `nrow(audioFileList)` to run entire dataset
+for (i in 1:nrow(audioFileList)) { 
   print("------------")
   print(paste("FolderPath:", dirname(audioFileList[i,]$Path)))
   print(paste("FileName:", basename(audioFileList[i,]$filename)))
@@ -114,4 +109,17 @@ for (i in 1:nrow(audioFileList)) { # replace `nrow(audioFileList[1:testfiles,]` 
 sink()
 ```
 
+```{r}
+audioFileList <- audioFileList %>% rowwise() %>% 
+  mutate(scores <- binMatch(audioFileList$Path, 
+                     titi_temps, 
+                     quiet = TRUE))
+```
+
+```{r}
+scores <- batchBinMatch(dir.survey = "Audio/AutomatedDetection/TestData/", 
+                        ext.survey = "wav", 
+                        titi_temps, 
+                        time.source = "filename")
+```
 
