@@ -86,7 +86,7 @@ outfile <- "detection_output.txt"
 sink(file = outfile)
 ```
 
-This is the part that  can't get to work. 
+This is the part that  can't get to work. I get the results I'm looking for, but they're pasted underneath the code block rather than in the .txt file. However, it would be easier to skip the .txt file completely and tack the results on to the current audioFileList data frame, so I've tried two other things underneath this code block.
 ```{r}
 # Loop through all .wav files and run binMatch().
 # This code generates one output file (.txt) containing "scores" for each .wav file.
@@ -109,6 +109,7 @@ for (i in 1:nrow(audioFileList)) {
 sink()
 ```
 
+I thought I'd see if I can get the results of binMatch() straight into a data frame in a way similar to what we do with SPL data from the PAMGuide package,but I can't quite get that to work 
 ```{r}
 audioFileList <- audioFileList %>% rowwise() %>% 
   mutate(scores <- binMatch(audioFileList$Path, 
@@ -116,10 +117,11 @@ audioFileList <- audioFileList %>% rowwise() %>%
                      quiet = TRUE))
 ```
 
+I also found a version of binMatch() that can run on batches of files, so probably more what I'm looking for. However, I can't get this to work properly either. The problem with this latter one seems to be in reading in the templates from 'titi temps'. The help function tells me that the templates should be in a binTemplateList class, which 'titi_temps' seems to be already, so I'm not sure why it doesn't work. 
 ```{r}
 scores <- batchBinMatch(dir.survey = "Audio/AutomatedDetection/TestData/", 
                         ext.survey = "wav", 
                         titi_temps, 
-                        time.source = "filename")
+                        time.source = "audioFileList$filename")
 ```
 

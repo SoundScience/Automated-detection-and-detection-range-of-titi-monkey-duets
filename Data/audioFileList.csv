@@ -1,5 +1,5 @@
 Path,filename,StartTime,DistanceScore,RecordingDate,Species,Detected
-Audio/AutomatedDetection/TestData/HARPIA_2014-02-04_061500.wav,HARPIA_2014-02-04_061500.wav,2014-02-04-06:15:00,2,2/4/2014,Howler,Yes
-Audio/AutomatedDetection/TestData/PUMA_2014-02-07_074500.wav,PUMA_2014-02-07_074500.wav,2014-02-07-07:45:00,2,2/7/2014,Titi,Yes
-Audio/AutomatedDetection/TestData/PUMA_2013-03-03_064500.wav,PUMA_2013-03-03_064500.wav,2013-03-03-06:45:00,3,3/3/2013,Titi,Yes
-Audio/AutomatedDetection/TestData/PUMA_2014-02-07_080000.wav,PUMA_2014-02-07_080000.wav,2014-02-07-08:00:00,4,2/7/2014,Titi,No
+Audio/AutomatedDetection/TestData/HARPIA_2014-02-04_061500_EST.wav,HARPIA_2014-02-04_061500_EST.wav,2014-02-04-06:15:00,2,2/4/2014,Howler,Yes
+Audio/AutomatedDetection/TestData/PUMA_2014-02-07_074500_EST.wav,PUMA_2014-02-07_074500_EST.wav,2014-02-07-07:45:00,2,2/7/2014,Titi,Yes
+Audio/AutomatedDetection/TestData/PUMA_2013-03-03_064500_EST.wav,PUMA_2013-03-03_064500_EST.wav,2013-03-03-06:45:00,3,3/3/2013,Titi,Yes
+Audio/AutomatedDetection/TestData/PUMA_2014-02-07_080000_EST.wav,PUMA_2014-02-07_080000_EST.wav,2014-02-07-08:00:00,4,2/7/2014,Titi,No
