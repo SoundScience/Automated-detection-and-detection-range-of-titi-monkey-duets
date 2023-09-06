@@ -5,7 +5,7 @@
 This repository contains data and code related to the analyses presented in <a href="https://www.frontiersin.org/articles/10.3389/fevo.2023.1173722/full">van Kuijk et al. (2023)</a>.  
 
 ## ***Scripts*** 
-The main directory contains four R-scripts related to different analyses:
+The main directory contains three R-scripts related to different analyses:
 - **Script 1**: Contains code related to determining the temporal distrubution, source level and attenuation of duets.
 - **Script 2**: Contains code related to automated detection of duets and the detection distance of duets using our PAM setup. We use an automated detection tool from the R-package *monitoR*, written by Jon Katz and Sasha Hafner and published in Katz et al. (2016), for automated detection of titi duets in audio files.
 - **Script 3**: This script is a modified version of the PAMGuide script written by Nathan D. Merchant, published in Merchant et al. (2015). The primary modifications made are noted in the header of the file. Please refer to [Appendix S1](https://besjournals-onlinelibrary-wiley-com.ezproxy.lib.utexas.edu/action/downloadSupplement?doi=10.1111%2F2041-210X.12330&file=mee312330-sup-0001-AppendixS1.pdf) in the Merchant et al. (2015) paper for detailed instructions on how to use the package.
