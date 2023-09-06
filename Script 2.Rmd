@@ -1,7 +1,7 @@
 ---
 title: "Script 3"
-author: "Silvy van Kuijk, Sun O'Brien & Tony Di Fiore"
-date: "8/25/2023"
+author: "Silvy van Kuijk, Sun O'Brien & Anthony Di Fiore"
+date: "2023-08-25"
 output: html_document
 ---
 
@@ -11,6 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Install Dependencies
 This script was written in R version 4.1.2.
+
 ```{r, include = FALSE}
 # Package names
 packages <- c("tidyverse", # For data wrangling, also loads in lubridate, dplyr, ggplot2.
@@ -37,13 +38,12 @@ lapply(packages, require, character.only = TRUE)    # Load multiple packages
 audioFileList <- read_csv("Data/audioFileList.csv", col_names = TRUE)
 ```
 
-
 # Step 1.1: Create and test your templates
 Create a list of all audio files that you want to use for template creation. For simplicity, we will only use a few of our templates as examples here. This will mean that results of the automated detection algorithm here will not match the results in our paper as we use a limited set of templates and a limited set of audio files as test data for demonstration purposes.
+
 ```{r}
 fileList <- list.files(path = "Audio/AutomatedDetection/Templates", full.names = TRUE) # Get a list of all files in directory.
 ```
-
 
 Creating templates with the monitoR package is a fairly straightforward process. You can read more details on the process in Katz et al. (2016) or this vignette: https://cran.r-project.org/web/packages/monitoR/monitoR.pdf. However, creating templates that capture your signals of interest well requires some trial and error. In creating templates, test a variation of frequency ranges, time frames and amplitude cutoffs to determine what works well for each template.In our experience, setting the upper and lower frequency limit too close to the actual frequency range of the call led to a lower accuracy. Templates scored better when a little ambient noise above and below the frequencies of interest was included. 
 
@@ -51,6 +51,7 @@ You'll also want to play around with combinations of templates to see what gives
 Use a training dataset to test your templates. The code needed to test your data is similar to the code you'll run when analyzing your actual dataset.
 
 We demonstrate some of our final template settings with the four samples below. Templates 1 and 2 are titi templates, 3 and 4 are howler templates.
+
 ```{r}
 template1 <- makeBinTemplate("Audio/AutomatedDetection/Templates/TestSample_001.wav",
                               frq.lim = c(0.3, 1.6), t.lim = c(25, 35), 
@@ -76,21 +77,15 @@ howler_temps <- combineBinTemplates(template3,
                                     template4)
 ```
 
-
 # Step 1.2: Analyze your data using your templates
 
 ```{r}
 # Create a text file to store the output.
 outfile <- "detection_output.txt"
-
 sink(file = outfile)
-```
 
-This is the part that  can't get to work. I get the results I'm looking for, but they're pasted underneath the code block rather than in the .txt file. However, it would be easier to skip the .txt file completely and tack the results on to the current audioFileList data frame, so I've tried two other things underneath this code block.
-```{r}
 # Loop through all .wav files and run binMatch().
 # This code generates one output file (.txt) containing "scores" for each .wav file.
-
 for (i in 1:nrow(audioFileList)) { 
   print("------------")
   print(paste("FolderPath:", dirname(audioFileList[i,]$Path)))
@@ -108,20 +103,3 @@ for (i in 1:nrow(audioFileList)) {
 
 sink()
 ```
-
-I thought I'd see if I can get the results of binMatch() straight into a data frame in a way similar to what we do with SPL data from the PAMGuide package,but I can't quite get that to work 
-```{r}
-audioFileList <- audioFileList %>% rowwise() %>% 
-  mutate(scores <- binMatch(audioFileList$Path, 
-                     titi_temps, 
-                     quiet = TRUE))
-```
-
-I also found a version of binMatch() that can run on batches of files, so probably more what I'm looking for. However, I can't get this to work properly either. The problem with this latter one seems to be in reading in the templates from 'titi temps'. The help function tells me that the templates should be in a binTemplateList class, which 'titi_temps' seems to be already, so I'm not sure why it doesn't work. 
-```{r}
-scores <- batchBinMatch(dir.survey = "Audio/AutomatedDetection/TestData/", 
-                        ext.survey = "wav", 
-                        titi_temps, 
-                        time.source = "audioFileList$filename")
-```
-
