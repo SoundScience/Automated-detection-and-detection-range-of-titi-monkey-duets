@@ -1,4 +1,4 @@
-# Automated detection and detection range of primate duets: A case study of the red titi monkey (*Plecturocebus discolor*) using passice acoustic monitoring
+# Automated detection and detection range of primate duets: A case study of the red titi monkey (*Plecturocebus discolor*) using passive acoustic monitoring
 
 
 ## Introduction
