@@ -1,5 +1,5 @@
 ---
-title: "Script 3"
+title: "Script 2"
 author: "Silvy van Kuijk, Sun O'Brien & Anthony Di Fiore"
 date: "2023-08-25"
 output: html_document
@@ -39,45 +39,67 @@ audioFileList <- read_csv("Data/audioFileList.csv", col_names = TRUE)
 ```
 
 # Step 1.1: Create and test your templates
-Create a list of all audio files that you want to use for template creation. For simplicity, we will only use a few of our templates as examples here. This will mean that results of the automated detection algorithm here will not match the results in our paper as we use a limited set of templates and a limited set of audio files as test data for demonstration purposes.
+Create a list of all audio files that you want to use for template creation. For
+simplicity, we will only use a few of our templates as examples here. This will 
+mean that results of the automated detection algorithm here will not match the 
+results in our paper as we use a limited set of templates and a limited set of 
+audio files as test data for demonstration purposes.
 
 ```{r}
 fileList <- list.files(path = "Audio/AutomatedDetection/Templates", full.names = TRUE) # Get a list of all files in directory.
 ```
 
-Creating templates with the monitoR package is a fairly straightforward process. You can read more details on the process in Katz et al. (2016) or this vignette: https://cran.r-project.org/web/packages/monitoR/monitoR.pdf. However, creating templates that capture your signals of interest well requires some trial and error. In creating templates, test a variation of frequency ranges, time frames and amplitude cutoffs to determine what works well for each template.In our experience, setting the upper and lower frequency limit too close to the actual frequency range of the call led to a lower accuracy. Templates scored better when a little ambient noise above and below the frequencies of interest was included. 
+Creating templates with the monitoR package is a fairly straightforward process. 
+You can read more details on the process in Katz et al. (2016) or this vignette:
+https://cran.r-project.org/web/packages/monitoR/monitoR.pdf. However, creating 
+templates that capture your signals of interest well requires some trial and error. 
+In creating templates, test a variation of frequency ranges, time frames and 
+amplitude cutoffs to determine what works well for each template.In our experience, 
+setting the upper and lower frequency limit too close to the actual frequency range 
+of the call led to a lower accuracy. Templates scored better when a little ambient 
+noise above and below the frequencies of interest was included. 
 
-You'll also want to play around with combinations of templates to see what gives you the best results. We found that the combination of templates that worked best included calls of different quality (calls both close to and at larger distance from the recorder).
-Use a training dataset to test your templates. The code needed to test your data is similar to the code you'll run when analyzing your actual dataset.
+You'll also want to play around with combinations of templates to see what gives 
+you the best results. We found that the combination of templates that worked best
+included calls of different quality (calls both close to and at larger distance 
+from the recorder).
+Use a training dataset to test your templates. The code needed to test your data 
+is similar to the code you'll run when analyzing your actual dataset.
 
-We demonstrate some of our final template settings with the four samples below. Templates 1 and 2 are titi templates, 3 and 4 are howler templates.
+We demonstrate some of our final template settings with the five samples below.
+Templates 1, 2 and 3 are titi monkey templates, 4 and 5 are howler monkey templates.
 
 ```{r}
 template1 <- makeBinTemplate("Audio/AutomatedDetection/Templates/TestSample_001.wav",
                               frq.lim = c(0.3, 1.6), t.lim = c(25, 35), 
-                              name = "F1,025,-25,T", amp.cutoff = (-25))
+                              name = "T1,025,-25,T", amp.cutoff = (-25))
 
 template2 <- makeBinTemplate("Audio/AutomatedDetection/Templates/TestSample_002.wav",
                               frq.lim = c(0.2, 1.8), t.lim = c(0, 10), 
-                              name = "F2,000,-25,T", amp.cutoff = (-25))
+                              name = "T2,000,-25,T", amp.cutoff = (-25))
 
-template3 <- makeBinTemplate("Audio/AutomatedDetection/Templates/TestSample_006.wav",
-                              frq.lim = c(0.2, 1.0), t.lim = c(15, 25), 
-                              name = "F3,015,-25,H", amp.cutoff = (-25))
+template3 <- makeBinTemplate("Audio/AutomatedDetection/Templates/TestSample_003.wav",
+                              frq.lim = c(0.2, 1.8), t.lim = c(0, 10), 
+                              name = "T3,005,-25,T", amp.cutoff = (-25))
 
-template4 <- makeBinTemplate("Audio/AutomatedDetection/Templates/TestSample_007.wav",
+template4 <- makeBinTemplate("Audio/AutomatedDetection/Templates/TestSample_012.wav",
+                              frq.lim = c(0.2, 1.4), t.lim = c(3, 13), 
+                              name = "T4,005,-25,H", amp.cutoff = (-25))
+
+template5 <- makeBinTemplate("Audio/AutomatedDetection/Templates/TestSample_007.wav",
                               frq.lim = c(0.2, 1.4), t.lim = c(17, 27), 
-                              name = "F4,017,-25,H", amp.cutoff = (-25))
-
+                              name = "T5,017,-25,H", amp.cutoff = (-25))
 
 # Create a combined template bin.
-titi_temps <- combineBinTemplates(template1,
-                                  template2)
-howler_temps <- combineBinTemplates(template3,
-                                    template4)
+templates <- combineBinTemplates(template1,
+                                 template2, 
+                                 template3, 
+                                 template4,
+                                 template5)
+
 ```
 
-# Step 1.2: Analyze your data using your templates
+# Step 1.2: Analyze your data using monitoR's binMatch() function and your templates
 
 ```{r}
 # Create a text file to store the output.
@@ -96,10 +118,43 @@ for (i in 1:nrow(audioFileList)) {
   print(paste("Species:", audioFileList[i,]$Species))
   print(paste("Detected:", audioFileList[i,]$Detected))
   scores <- binMatch(audioFileList[i,]$Path, 
-                     titi_temps, 
+                     templates, 
                      quiet = TRUE) 
   print(scores)
 }
 
 sink()
+```
+
+
+I found a version of binMatch() that can run on batches of files, so probably more what I'm looking for. However, I can't get this to work properly either. The problem with this latter one seems to be in reading in the templates. The help function tells me that the templates should be in a binTemplateList class, which 'titi_temps' seems to be already, so I'm not sure why it doesn't work. 
+```{r}
+scores <- batchBinMatch(dir.survey = "Audio/AutomatedDetection/TestData/", 
+                        ext.survey = "wav", 
+                        templates, 
+                        time.source = "audioFileList$filename")
+```
+
+
+# Step 1.3: Average results of all templates for each audio file. 
+
+Create average of template detection results. For each audio file, the binMatch() function reports a max score and a min score. The max score is of interest to us, as it gives us the highest similarity score for that audio file. We average the max scores of all templates for each audio file.
+```{r}
+results <- read_csv("Data/AutomatedDetectionResults.csv", col_names = TRUE) # Load in file
+
+results <- results %>% group_by(filename, Species, template_species) %>%
+  summarize(mean.max.score = mean(max.score),
+            mean.min.score = mean(min.score))
+
+results <- results %>% pivot_wider(., names_from=c("template_species"),
+                                 values_from = c("mean.min.score", "mean.max.score"))
+
+```
+
+Next, determine which scores are over the thresholds you've set for your species. In our case, we consider a detection a titi duet when the titi templates have a score of 4.0 or higher. In addition, to avoid howler roars showing up as false positive detections, titi template scores should also be higher than howler template scores.
+```{r}
+output <- results %>% mutate(Species = recode(Species, 'Titi' = '1', 'Howler' =  '0' ))%>%
+  mutate(titi_over_4 = if_else(mean.max.score_T >= 4.0, 1, 0),
+         titi_over_4_and_over_howler = if_else(mean.max.score_T >= 4.0 & mean.max.score_T > mean.max.score_H, 1, 0)
+         )
 ```
