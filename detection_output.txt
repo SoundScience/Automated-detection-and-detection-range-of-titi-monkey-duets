@@ -1,0 +1,84 @@
+[1] "------------"
+[1] "FolderPath: Audio/AutomatedDetection/TestData"
+[1] "FileName: HARPIA_2014-02-04_061500_EST.wav"
+[1] "StartTime: 2014-02-04-06:15:00"
+[1] "DistanceScore: 2"
+[1] "RecordingDate: 2/4/2014"
+[1] "Species: Howler"
+[1] "Detected: Yes"
+
+A "templateScores" object
+
+Based on the survey file:  Audio/AutomatedDetection/TestData/HARPIA_2014-02-04_061500_EST.wav 
+
+And  5  templates 
+Score information
+             min.score max.score n.scores
+T1,025,-25,T     -1.89      2.36     1921
+T2,000,-25,T     -2.16      2.33     1921
+T3,005,-25,T     -1.48      4.60     1921
+T4,005,-25,H      0.84      8.90     1921
+T5,017,-25,H      1.38      8.16     1921
+[1] "------------"
+[1] "FolderPath: Audio/AutomatedDetection/TestData"
+[1] "FileName: PUMA_2014-02-07_074500_EST.wav"
+[1] "StartTime: 2014-02-07-07:45:00"
+[1] "DistanceScore: 2"
+[1] "RecordingDate: 2/7/2014"
+[1] "Species: Titi"
+[1] "Detected: Yes"
+
+A "templateScores" object
+
+Based on the survey file:  Audio/AutomatedDetection/TestData/PUMA_2014-02-07_074500_EST.wav 
+
+And  5  templates 
+Score information
+             min.score max.score n.scores
+T1,025,-25,T     -4.15      8.06     3097
+T2,000,-25,T     -2.25      9.21     3097
+T3,005,-25,T     -1.54     13.81     3097
+T4,005,-25,H     -4.89      7.73     3097
+T5,017,-25,H     -2.02      5.27     3097
+[1] "------------"
+[1] "FolderPath: Audio/AutomatedDetection/TestData"
+[1] "FileName: PUMA_2013-03-03_064500_EST.wav"
+[1] "StartTime: 2013-03-03-06:45:00"
+[1] "DistanceScore: 3"
+[1] "RecordingDate: 3/3/2013"
+[1] "Species: Titi"
+[1] "Detected: Yes"
+
+A "templateScores" object
+
+Based on the survey file:  Audio/AutomatedDetection/TestData/PUMA_2013-03-03_064500_EST.wav 
+
+And  5  templates 
+Score information
+             min.score max.score n.scores
+T1,025,-25,T     -0.64      4.69     4637
+T2,000,-25,T     -0.64      4.55     4637
+T3,005,-25,T     -0.09      4.60     4637
+T4,005,-25,H     -2.08      3.76     4637
+T5,017,-25,H     -0.25      3.46     4637
+[1] "------------"
+[1] "FolderPath: Audio/AutomatedDetection/TestData"
+[1] "FileName: PUMA_2014-02-07_080000_EST.wav"
+[1] "StartTime: 2014-02-07-08:00:00"
+[1] "DistanceScore: 4"
+[1] "RecordingDate: 2/7/2014"
+[1] "Species: Titi"
+[1] "Detected: No"
+
+A "templateScores" object
+
+Based on the survey file:  Audio/AutomatedDetection/TestData/PUMA_2014-02-07_080000_EST.wav 
+
+And  5  templates 
+Score information
+             min.score max.score n.scores
+T1,025,-25,T     -1.79      2.64     3916
+T2,000,-25,T     -2.32      1.61     3916
+T3,005,-25,T     -2.20      1.95     3916
+T4,005,-25,H      1.03      5.84     3916
+T5,017,-25,H      1.24      4.26     3916
