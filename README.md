@@ -11,15 +11,14 @@ The main directory contains three R-scripts related to different analyses:
 - **Script 3**: This script is a modified version of the PAMGuide script written by Nathan D. Merchant, published in Merchant et al. (2015). The primary modifications made are noted in the header of the file. Please refer to [Appendix S1](https://besjournals-onlinelibrary-wiley-com.ezproxy.lib.utexas.edu/action/downloadSupplement?doi=10.1111%2F2041-210X.12330&file=mee312330-sup-0001-AppendixS1.pdf) in the Merchant et al. (2015) paper for detailed instructions on how to use the package.
 
 
-## ***Data*** Directory
+## Data Directory
 The ***Data*** directory contains ## CSV files containing data used for our analyses:
 ### **Script1**
 - **Duets_Script1.csv**: A list of all duets we extracted from the Projecto Primates database from observers that followed titi monkeys.
 - **Observer_Activity_Script1.csv**: The activity data of the observers following titi monkeys. We only want to use data from times where people were actively following titi monkeys, as periods of time when people were doing other non-field work related tasks, like office work, is less likely to reliably record all titi duets.
-- **Home_Range_Data_Part1_Script1.csv**: 
-- **Home_Range_Data_Part2_Script1.csv**: 
-- **Playback_exp.csv**:
-- **Playback_obs.csv**:
+- **Home_Range_Data_Part1_Script1.csv**: Sample data on 2 duets used to demonstrate how we calculated the source level (amplitude at 1m from monkeys) of the duets.
+- **Playback_exp.csv**: Expected sound pressure levels (SPL) at specific distances assuming only spherical spreading. Expected SPL was calculated using the inverse square using the known calibrated playback amplitude of 100 dB at 1m.
+- **Playback_obs.csv**: Observed sound pressure levels at each of the distances at which we conducted playbacks.
 ### **Script 2**
 - **audioFileList**: A list of four audio files that we'll use to demonstrate how we used *monitoR*'s binary point matching algorithm to detect titi duets in our audio data. 
 
